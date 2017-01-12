@@ -1,0 +1,32 @@
+<%= form_for(create_rock) do |f| %>
+  <% if create_rock.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(create_rock.errors.count, "error") %> prohibited this create_rock from being saved:</h2>
+
+      <ul>
+      <% create_rock.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :description %>
+    <%= f.text_field :description %>
+  </div>
+
+  <div class="field">
+    <%= f.label :image %>
+    <%= f.text_field :image %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

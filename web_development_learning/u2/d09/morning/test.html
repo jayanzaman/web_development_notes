@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>TEAM SCULLY</title>
+  <style>
+
+.magictime {
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -o-animation-duration: 1s;
+  animation-duration: 1s;
+}
+
+  #skully {
+   background: url("https://raw.githubusercontent.com/kibagateaux/kibagateaux.github.io/master/space-background.jpg");
+  /*position: absolute;
+  top: 150px;
+  height: 500px;
+  width: 200%;*/
+  color: white;
+}
+
+.container {
+    position: relative;
+    width: 0;
+    max-width: 0;
+    margin: 0;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.student{
+font-size: 200px;
+padding: 20px;
+
+}
+
+body {
+  position: absolute;
+  width: 100%;
+}
+
+li {
+  display: inline-block;
+  list-style: none;
+}
+
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magic/1.1.0/magic.min.css">
+  <link rel = "stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+</head>
+<body>
+<header> TEAM SCULLY HAS SCINTILATING BRAIN POWER </header>
+
+  <div class="row">
+    <div id = "skully" class="columns twelve">
+      <h1> Welcome to Scully </h1>
+      <h4> We the best X-files</h4>
+      <h1>TEAM SCULLY PROFILE PAGE</h1>
+    </div>
+  </div>
+</div>
+
+<div class="row container">
+  <div class="columns twelve">
+      <div class="students">
+      <ul class="columns twelve">
+        <li>
+        <i class="fa fa-male student" aria-hidden="true"></i><br>
+        Jayan</li>
+        <li><i class="fa fa-male student" aria-hidden="true"></i><br>
+        Justin</li>
+        <li><i class="fa fa-male student" aria-hidden="true"></i><br>
+        Kiba</li>
+        <li><i class="fa fa-male student" aria-hidden="true"></i><br>
+        Matt</li>
+        <li><i class="fa fa-male student" aria-hidden="true"></i><br>
+        Taj</li>
+      </ul>
+    </div>
+  </div>
+  </div>
+    <script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+  <script>
+
+$('li').click(function () {
+$(this).addClass('magictime spaceOutUp');
+});
+
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+json.array! @appjayans, partial: 'appjayans/appjayan', as: :appjayan

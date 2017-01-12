@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <div class="nav-wrapper">
+        <a href="/" class="brand-logo left">X-FILES Realty</a>
+        <ul id="nav_mobile" class="right">
+          <li><a href="/buildings">Buildings</a></li>
+          <li><a href="/apartments">Apartments</a></li>
+          <li><a href="/tenants">Tenants</a></li>
+          <li><a href="/doormen">Doormen</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="row">
+        <div class="col s12">
+          <div class="card blue-grey">
+            <div class="card-content">
+              <a href="/apartments/{{apartments.id}}">
+                <span class="card-title center-align">{{apartments.aname}}</span>
+              </a>
+              <p>Floor: {{apartments.floor}}<br>
+              Price: ${{apartments.price}}<br>
+              {{apartments.sqft}} Square Feet<br>
+              {{apartments.bedrooms}} BR, {{apartments.bathrooms}} BA
+             </p>
+            </div>
+          </div>
+          <div class="row">
+          {{#tenants}}
+          <div class="col s12 m6 l4">
+            <div class="hoverable card teal">
+              <div class="card-content">
+                <span class="card-title center-align">{{tname}}</span>
+                <p>Age: {{age}}<br>
+                Gender: {{gender}}</p>
+              </div>
+              <div class="card-action">
+                <a href="/tenants/">View All Tenants</a>
+              </div>
+            </div>
+          </div>
+          {{/tenants}}
+          </div>
+        </div>
+      </div>
+  </div>
+</body>
+</html>

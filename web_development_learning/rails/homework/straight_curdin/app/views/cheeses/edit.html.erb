@@ -1,0 +1,19 @@
+<h1>Edit Cheese</h1>
+
+<!-- <form accept-charset="UTF-8" action="/cheeses" method="PUT">
+<%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+  <h6>Name: <input name="name" value="<%= @cheese.name %>" /></h6>
+  <h6>Milk Type: <input name="milk_type" value="<%= @cheese.milk_type %>"/></h6>
+  <h6>Description: <input name="description" value="<%= @cheese.description %>"/></h6>
+  <h6>Image Path: <input name="image_url" value="<%= @cheese.image_url %>" /></h6>
+  <button>Submit</button>
+</form> -->
+
+<%= form_for @cheese do |c| %>
+  Name: <%= text_field_tag :name, @cheese.name %><br>
+  Milk Type: <%= text_field_tag :milk_type, @cheese.milk_type %><br>
+  Description: <%= text_field_tag :description, @cheese.description %><br>
+  Stank Level: <%= text_field_tag :stank_level, @cheese.stank_level %><br>
+  Image URL: <%= text_field_tag :image_url, @cheese.image_url %><br>
+  <%= c.submit %>
+<% end %>

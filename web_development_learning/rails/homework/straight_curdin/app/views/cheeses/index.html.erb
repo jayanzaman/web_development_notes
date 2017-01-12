@@ -1,0 +1,16 @@
+<h1>The Great Hall of Cheeses<h1>
+
+    <% @cheeses.each do |cheese| %>
+    <a href="/cheeses/<%= cheese.id %>"><h3><%= cheese.name %></h3></a>
+    <p>Milk Type: <%= cheese.milk_type %></p>
+    <h5>Description</h5>
+    <p><%= cheese.description %></p>
+    <p>Stank Level: <%= cheese.description %></p>
+    <img src='<%= cheese.image_url %>'>
+    <br>
+    <button><%= link_to 'Eat This Cheese', cheese, method: :delete %></button>
+    <br>
+    <br>
+
+    <% end %>
+

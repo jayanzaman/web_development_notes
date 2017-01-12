@@ -1,0 +1,32 @@
+<%= form_for :user, method: 'POST', url: {action: 'create'} do |f| %>
+  <%= label(:user, :name) %>
+  <%= f.text_field :name %>
+  <%= label(:user, :email) %>
+  <%= f.text_field :email %>
+  <%= label(:user, :company) %>
+  <%= f.text_field :company %>
+  <%= label(:user, :feedback) %>
+  <%= f.text_field :feedback %>
+<br>
+<%= f.submit 'Create New User' %>
+<% end %>
+
+<br>
+<br>
+
+
+<% @users.each do |user| %>
+  <%= user['name'] %> -
+  <%= mail_to user['email'], user['email'] %>
+  from
+  <i><%= user['company'] %><i>
+  <br>
+  Their Feedback:
+  <i><%= user['feedback'] %><i>
+  <br><br>
+
+  <%= link_to 'Remove User', user, method: :delete %><br>
+  <%= link_to 'View/Edit User', user, method: :get %><br>
+  <hr>
+
+  <% end %>

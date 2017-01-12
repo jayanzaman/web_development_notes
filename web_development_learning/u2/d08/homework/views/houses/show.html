@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Houses Show</title>
+    <link rel="stylesheet" href="../stylesheets/styles.css">
+  </head>
+  <body>
+    <div class="house">
+      {{#house}}
+      <img src="{{img_url}}">
+      <h2><a href="/houses/{{id}}">{{name}}</a></h2>
+      {{/house}}
+    </div>
+    <div class="roster">
+    {{#students}}
+      <h1>{{fname}} {{lname}}</h1>
+      <img src="{{image}}">
+      {{/students}}
+    </div>
+  </body>
+</html>

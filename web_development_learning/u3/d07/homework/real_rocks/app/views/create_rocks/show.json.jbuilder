@@ -1,0 +1,1 @@
+json.partial! "create_rocks/create_rock", create_rock: @create_rock

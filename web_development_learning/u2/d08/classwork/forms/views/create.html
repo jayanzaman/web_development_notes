@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Users</title>
+    <link rel="stylesheet" href="">
+  </head>
+  <body>
+    <h1>Create New User</h1>
+
+    <div class="user">
+      <form method="POST" action="/users/{{id}}?_method=PUT">
+        <p>Name: <input name="name" value='{{name}}' ></p>
+        <p>Email:  <input name="email" value='{{email}}' ></p>
+        <p>Password: <input name="password" value='{{password}}' ><p>
+          <button>Submit</button>
+        </form>
+      </div>
+
+    </body>
+  </html>

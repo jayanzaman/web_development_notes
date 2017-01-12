@@ -1,0 +1,174 @@
+nav{
+  font-size:  20px;
+  font-family: sans-serif;
+  text-align: center;
+}
+nav a{
+  color:  #000;
+  text-decoration: none;
+  display: inline-block;
+  margin: 1em;
+  padding: .5em;
+
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family:'Open Sans', sans-serif;
+    text-align: center;
+}
+.experience{
+  align-content: center;
+  clear: both;
+  padding: 20px;
+}
+.healthcare {
+  float: left;
+  width: 27%;
+  border-radius: 25px;
+  border: 2px solid rgb(163, 32, 9);
+  padding: 20px;
+  margin: 20px;
+  line-height: 200%;
+  box-shadow: 25px 25px 10px rgb(227, 44, 13);
+  height: 22em;
+
+}
+.law {
+  float: left;
+  width: 27%;
+  border-radius: 25px;
+  border: 2px solid rgb(255, 165, 0);
+  padding: 20px;
+  margin: 20px;
+  line-height: 200%;
+  box-shadow: 25px 25px 10px rgb(255, 190, 0);
+  height: 22em;
+}
+.business {
+  float: left;
+  width: 27%;
+  border-radius: 25px;
+  border: 2px solid rgb(21, 87, 0);
+  padding: 20px;
+  margin: 20px;
+  line-height: 200%;
+  box-shadow: 25px 25px 10px rgb(39, 163, 0);
+  height: 22em;
+}
+li{
+  float: left;
+  width: 25%;
+  margin: 0;
+
+}
+hr{
+  clear: both;
+  padding: 0px;
+  margin: 0;
+}
+
+ul{
+  list-style: none;
+  margin: 0;
+  border: 0;
+}
+
+ header {
+    font-family: sans-serif;
+    text-align: center;
+    color: rgba(0,0,0,1);
+    background-size: cover;
+  }
+.title-name{
+  font-size: 3rem;
+  text-transform: uppercase;
+  text-align: center;
+  float: clear;
+  font-family: sans-serif;
+  }
+h2{
+  font-family: sans-serif;
+}
+  img {
+    width: 480px;
+    margin: 5px 0px 0px 0px;
+    border: 2px solid white;
+    border-radius: 5%;
+
+  }
+
+button{
+  margin: 10px;
+  color: red;
+}
+article{
+  padding: 2em;
+  clear: both;
+  text-align: center;
+  align-content: center;
+  float: left;
+  width: 40%;
+}
+p{
+  text-align: justify;
+  font-size: 20;
+  padding: 10px;
+  line-height: 28px;
+  font-family: sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+}
+.GoogleMap{
+  float: right;
+/*   width: 40%; */
+
+}
+.map {
+        clear: both;
+        height: 400px;
+        width: 100%;
+        background-color: grey;
+       }
+
+a:hover{
+
+  border-bottom-style: solid;
+
+
+}
+.space{
+  height: 50px;
+}
+footer{
+  clear: both;
+  padding: 20px;
+}
+
+.email{
+  border-style: solid;
+  border-width: 5px;
+  color:  #000;
+  text-decoration: none;
+  display: inline-block;
+  margin: 1em;
+  padding: .5em;
+
+}
+.emailLogo{
+  float: left;
+
+}
+.githubLogo{
+  float: left;
+
+}
+
+/*====== Media Queries =========*/
+
+@media all and (max-width: 500px) {
+  img {
+    width: 200px;
+    margin: 5px 0px 0px 0px;
+    border: 2px solid white;
+
+  }
+}

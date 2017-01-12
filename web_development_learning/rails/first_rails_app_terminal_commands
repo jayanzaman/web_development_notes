@@ -1,0 +1,765 @@
+
+jayanzaman ~/Documents/GeneralAssembly/web_development_learning/web_development_learning on master[?]
+$ mkdir rails
+gmkdir: created directory 'rails'
+jayanzaman ~/Documents/GeneralAssembly/web_development_learning/web_development_learning on master[?]
+$ cd rails/
+jayanzaman ~/Documents/GeneralAssembly/web_development_learning/web_development_learning/rails on master
+$ gem install rails
+Fetching: concurrent-ruby-1.0.2.gem (100%)
+Successfully installed concurrent-ruby-1.0.2
+Fetching: tzinfo-1.2.2.gem (100%)
+Successfully installed tzinfo-1.2.2
+Fetching: activesupport-5.0.0.1.gem (100%)
+Successfully installed activesupport-5.0.0.1
+Fetching: mini_portile2-2.1.0.gem (100%)
+Successfully installed mini_portile2-2.1.0
+Fetching: nokogiri-1.6.8.1.gem (100%)
+Building native extensions.  This could take a while...
+Successfully installed nokogiri-1.6.8.1
+Fetching: rails-dom-testing-2.0.1.gem (100%)
+Successfully installed rails-dom-testing-2.0.1
+Fetching: loofah-2.0.3.gem (100%)
+Successfully installed loofah-2.0.3
+Fetching: rails-html-sanitizer-1.0.3.gem (100%)
+Successfully installed rails-html-sanitizer-1.0.3
+Fetching: erubis-2.7.0.gem (100%)
+Successfully installed erubis-2.7.0
+Fetching: builder-3.2.2.gem (100%)
+Successfully installed builder-3.2.2
+Fetching: actionview-5.0.0.1.gem (100%)
+Successfully installed actionview-5.0.0.1
+Fetching: rack-test-0.6.3.gem (100%)
+Successfully installed rack-test-0.6.3
+Fetching: actionpack-5.0.0.1.gem (100%)
+Successfully installed actionpack-5.0.0.1
+Fetching: sprockets-3.7.0.gem (100%)
+Successfully installed sprockets-3.7.0
+Fetching: sprockets-rails-3.2.0.gem (100%)
+Successfully installed sprockets-rails-3.2.0
+Fetching: thor-0.19.4.gem (100%)
+Successfully installed thor-0.19.4
+Fetching: railties-5.0.0.1.gem (100%)
+Successfully installed railties-5.0.0.1
+Fetching: websocket-extensions-0.1.2.gem (100%)
+Successfully installed websocket-extensions-0.1.2
+Fetching: websocket-driver-0.6.4.gem (100%)
+Building native extensions.  This could take a while...
+Successfully installed websocket-driver-0.6.4
+Fetching: nio4r-1.2.1.gem (100%)
+Building native extensions.  This could take a while...
+Successfully installed nio4r-1.2.1
+Fetching: actioncable-5.0.0.1.gem (100%)
+Successfully installed actioncable-5.0.0.1
+Fetching: globalid-0.3.7.gem (100%)
+Successfully installed globalid-0.3.7
+Fetching: activejob-5.0.0.1.gem (100%)
+Successfully installed activejob-5.0.0.1
+Fetching: mime-types-data-3.2016.0521.gem (100%)
+Successfully installed mime-types-data-3.2016.0521
+Fetching: mime-types-3.1.gem (100%)
+Successfully installed mime-types-3.1
+Fetching: mail-2.6.4.gem (100%)
+Successfully installed mail-2.6.4
+Fetching: actionmailer-5.0.0.1.gem (100%)
+Successfully installed actionmailer-5.0.0.1
+Fetching: arel-7.1.4.gem (100%)
+Successfully installed arel-7.1.4
+Fetching: activemodel-5.0.0.1.gem (100%)
+Successfully installed activemodel-5.0.0.1
+Fetching: activerecord-5.0.0.1.gem (100%)
+Successfully installed activerecord-5.0.0.1
+Fetching: rails-5.0.0.1.gem (100%)
+Successfully installed rails-5.0.0.1
+31 gems installed
+jayanzaman ~/Documents/GeneralAssembly/web_development_learning/web_development_learning/rails on master
+$ rails --version
+Rails 5.0.0.1
+jayanzaman ~/Documents/GeneralAssembly/web_development_learning/web_development_learning/rails on master
+$ rails new first_rails_app
+      create
+      create  README.md
+      create  Rakefile
+      create  config.ru
+      create  .gitignore
+      create  Gemfile
+      create  app
+      create  app/assets/config/manifest.js
+      create  app/assets/javascripts/application.js
+      create  app/assets/javascripts/cable.js
+      create  app/assets/stylesheets/application.css
+      create  app/channels/application_cable/channel.rb
+      create  app/channels/application_cable/connection.rb
+      create  app/controllers/application_controller.rb
+      create  app/helpers/application_helper.rb
+      create  app/jobs/application_job.rb
+      create  app/mailers/application_mailer.rb
+      create  app/models/application_record.rb
+      create  app/views/layouts/application.html.erb
+      create  app/views/layouts/mailer.html.erb
+      create  app/views/layouts/mailer.text.erb
+      create  app/assets/images/.keep
+      create  app/assets/javascripts/channels
+      create  app/assets/javascripts/channels/.keep
+      create  app/controllers/concerns/.keep
+      create  app/models/concerns/.keep
+      create  bin
+      create  bin/bundle
+      create  bin/rails
+      create  bin/rake
+      create  bin/setup
+      create  bin/update
+      create  config
+      create  config/routes.rb
+      create  config/application.rb
+      create  config/environment.rb
+      create  config/secrets.yml
+      create  config/cable.yml
+      create  config/puma.rb
+      create  config/spring.rb
+      create  config/environments
+      create  config/environments/development.rb
+      create  config/environments/production.rb
+      create  config/environments/test.rb
+      create  config/initializers
+      create  config/initializers/application_controller_renderer.rb
+      create  config/initializers/assets.rb
+      create  config/initializers/backtrace_silencers.rb
+      create  config/initializers/cookies_serializer.rb
+      create  config/initializers/cors.rb
+      create  config/initializers/filter_parameter_logging.rb
+      create  config/initializers/inflections.rb
+      create  config/initializers/mime_types.rb
+      create  config/initializers/new_framework_defaults.rb
+      create  config/initializers/session_store.rb
+      create  config/initializers/wrap_parameters.rb
+      create  config/locales
+      create  config/locales/en.yml
+      create  config/boot.rb
+      create  config/database.yml
+      create  db
+      create  db/seeds.rb
+      create  lib
+      create  lib/tasks
+      create  lib/tasks/.keep
+      create  lib/assets
+      create  lib/assets/.keep
+      create  log
+      create  log/.keep
+      create  public
+      create  public/404.html
+      create  public/422.html
+      create  public/500.html
+      create  public/apple-touch-icon-precomposed.png
+      create  public/apple-touch-icon.png
+      create  public/favicon.ico
+      create  public/robots.txt
+      create  test/fixtures
+      create  test/fixtures/.keep
+      create  test/fixtures/files
+      create  test/fixtures/files/.keep
+      create  test/controllers
+      create  test/controllers/.keep
+      create  test/mailers
+      create  test/mailers/.keep
+      create  test/models
+      create  test/models/.keep
+      create  test/helpers
+      create  test/helpers/.keep
+      create  test/integration
+      create  test/integration/.keep
+      create  test/test_helper.rb
+      create  tmp
+      create  tmp/.keep
+      create  tmp/cache
+      create  tmp/cache/assets
+      create  vendor/assets/javascripts
+      create  vendor/assets/javascripts/.keep
+      create  vendor/assets/stylesheets
+      create  vendor/assets/stylesheets/.keep
+      remove  config/initializers/cors.rb
+         run  bundle install
+Fetching gem metadata from https://rubygems.org/..........
+Fetching version metadata from https://rubygems.org/..
+Fetching dependency metadata from https://rubygems.org/.
+Resolving dependencies...
+Using rake 12.0.0
+Using concurrent-ruby 1.0.2
+Using i18n 0.7.0
+Installing minitest 5.10.1
+Using thread_safe 0.3.5
+Using builder 3.2.2
+Using erubis 2.7.0
+Using mini_portile2 2.1.0
+Using rack 2.0.1
+Using nio4r 1.2.1
+Using websocket-extensions 0.1.2
+Using mime-types-data 3.2016.0521
+Using arel 7.1.4
+Using bundler 1.13.6
+Using byebug 9.0.6
+Installing coffee-script-source 1.11.1
+Installing execjs 2.7.0
+Using method_source 0.8.2
+Using thor 0.19.4
+Installing debug_inspector 0.0.2 with native extensions
+Installing ffi 1.9.14 with native extensions
+Using multi_json 1.12.1
+Installing rb-fsevent 0.9.8
+Installing puma 3.6.2 with native extensions
+Installing sass 3.4.22
+Using tilt 2.0.5
+Installing sqlite3 1.3.12 with native extensions
+Installing turbolinks-source 5.0.0
+Using tzinfo 1.2.2
+Using nokogiri 1.6.8.1
+Using rack-test 0.6.3
+Using sprockets 3.7.0
+Using websocket-driver 0.6.4
+Using mime-types 3.1
+Installing coffee-script 2.4.1
+Installing uglifier 3.0.4
+Installing rb-inotify 0.9.7
+Installing turbolinks 5.0.1
+Using activesupport 5.0.0.1
+Using loofah 2.0.3
+Using mail 2.6.4
+Installing listen 3.0.8
+Using rails-dom-testing 2.0.1
+Using globalid 0.3.7
+Using activemodel 5.0.0.1
+Installing jbuilder 2.6.1
+Installing spring 2.0.0
+Using rails-html-sanitizer 1.0.3
+Using activejob 5.0.0.1
+Using activerecord 5.0.0.1
+Installing spring-watcher-listen 2.0.1
+Using actionview 5.0.0.1
+Using actionpack 5.0.0.1
+Using actioncable 5.0.0.1
+Using actionmailer 5.0.0.1
+Using railties 5.0.0.1
+Using sprockets-rails 3.2.0
+Installing coffee-rails 4.2.1
+Installing jquery-rails 4.2.1
+Installing web-console 3.4.0
+Using rails 5.0.0.1
+Installing sass-rails 5.0.6
+Bundle complete! 15 Gemfile dependencies, 62 gems now installed.
+Use `bundle show [gemname]` to see where a bundled gem is installed.
+         run  bundle exec spring binstub --all
+* bin/rake: spring inserted
+* bin/rails: spring inserted
+jayanzaman ~/Documents/GeneralAssembly/web_development_learning/web_development_learning/rails on master[?]
+$ subl first_rails_app/
+jayanzaman ~/Documents/GeneralAssembly/web_development_learning/web_development_learning/rails on master[?]
+$ rails generate controller articles
+Usage:
+  rails new APP_PATH [options]
+
+Options:
+  -r, [--ruby=PATH]                                      # Path to the Ruby binary of your choice
+                                                         # Default: /Users/jayanzaman/.rbenv/versions/2.2.3/bin/ruby
+  -m, [--template=TEMPLATE]                              # Path to some application template (can be a filesystem path or URL)
+  -d, [--database=DATABASE]                              # Preconfigure for selected database (options: mysql/oracle/postgresql/sqlite3/frontbase/ibm_db/sqlserver/jdbcmysql/jdbcsqlite3/jdbcpostgresql/jdbc)
+                                                         # Default: sqlite3
+  -j, [--javascript=JAVASCRIPT]                          # Preconfigure for selected JavaScript library
+                                                         # Default: jquery
+      [--skip-gemfile], [--no-skip-gemfile]              # Don't create a Gemfile
+  -B, [--skip-bundle], [--no-skip-bundle]                # Don't run bundle install
+  -G, [--skip-git], [--no-skip-git]                      # Skip .gitignore file
+      [--skip-keeps], [--no-skip-keeps]                  # Skip source control .keep files
+  -M, [--skip-action-mailer], [--no-skip-action-mailer]  # Skip Action Mailer files
+  -O, [--skip-active-record], [--no-skip-active-record]  # Skip Active Record files
+  -P, [--skip-puma], [--no-skip-puma]                    # Skip Puma related files
+  -C, [--skip-action-cable], [--no-skip-action-cable]    # Skip Action Cable files
+  -S, [--skip-sprockets], [--no-skip-sprockets]          # Skip Sprockets files
+      [--skip-spring], [--no-skip-spring]                # Don't install Spring application preloader
+      [--skip-listen], [--no-skip-listen]                # Don't generate configuration that depends on the listen gem
+  -J, [--skip-javascript], [--no-skip-javascript]        # Skip JavaScript files
+      [--skip-turbolinks], [--no-skip-turbolinks]        # Skip turbolinks gem
+  -T, [--skip-test], [--no-skip-test]                    # Skip test files
+      [--dev], [--no-dev]                                # Setup the application with Gemfile pointing to your Rails checkout
+      [--edge], [--no-edge]                              # Setup the application with Gemfile pointing to Rails repository
+      [--rc=RC]                                          # Path to file containing extra configuration options for rails command
+      [--no-rc], [--no-no-rc]                            # Skip loading of extra configuration options from .railsrc file
+      [--api], [--no-api]                                # Preconfigure smaller stack for API only apps
+
+Runtime options:
+  -f, [--force]                    # Overwrite files that already exist
+  -p, [--pretend], [--no-pretend]  # Run but do not make any changes
+  -q, [--quiet], [--no-quiet]      # Suppress status output
+  -s, [--skip], [--no-skip]        # Skip files that already exist
+
+Rails options:
+  -h, [--help], [--no-help]        # Show this help message and quit
+  -v, [--version], [--no-version]  # Show Rails version number and quit
+
+Description:
+    The 'rails new' command creates a new Rails application with a default
+    directory structure and configuration at the path you specify.
+
+    You can specify extra command-line arguments to be used every time
+    'rails new' runs in the .railsrc configuration file in your home directory.
+
+    Note that the arguments specified in the .railsrc file don't affect the
+    defaults values shown above in this help message.
+
+Example:
+    rails new ~/Code/Ruby/weblog
+
+    This generates a skeletal Rails installation in ~/Code/Ruby/weblog.
+jayanzaman ~/Documents/GeneralAssembly/web_development_learning/web_development_learning/rails on master[?]
+$ rails g controller articles
+Usage:
+  rails new APP_PATH [options]
+
+Options:
+  -r, [--ruby=PATH]                                      # Path to the Ruby binary of your choice
+                                                         # Default: /Users/jayanzaman/.rbenv/versions/2.2.3/bin/ruby
+  -m, [--template=TEMPLATE]                              # Path to some application template (can be a filesystem path or URL)
+  -d, [--database=DATABASE]                              # Preconfigure for selected database (options: mysql/oracle/postgresql/sqlite3/frontbase/ibm_db/sqlserver/jdbcmysql/jdbcsqlite3/jdbcpostgresql/jdbc)
+                                                         # Default: sqlite3
+  -j, [--javascript=JAVASCRIPT]                          # Preconfigure for selected JavaScript library
+                                                         # Default: jquery
+      [--skip-gemfile], [--no-skip-gemfile]              # Don't create a Gemfile
+  -B, [--skip-bundle], [--no-skip-bundle]                # Don't run bundle install
+  -G, [--skip-git], [--no-skip-git]                      # Skip .gitignore file
+      [--skip-keeps], [--no-skip-keeps]                  # Skip source control .keep files
+  -M, [--skip-action-mailer], [--no-skip-action-mailer]  # Skip Action Mailer files
+  -O, [--skip-active-record], [--no-skip-active-record]  # Skip Active Record files
+  -P, [--skip-puma], [--no-skip-puma]                    # Skip Puma related files
+  -C, [--skip-action-cable], [--no-skip-action-cable]    # Skip Action Cable files
+  -S, [--skip-sprockets], [--no-skip-sprockets]          # Skip Sprockets files
+      [--skip-spring], [--no-skip-spring]                # Don't install Spring application preloader
+      [--skip-listen], [--no-skip-listen]                # Don't generate configuration that depends on the listen gem
+  -J, [--skip-javascript], [--no-skip-javascript]        # Skip JavaScript files
+      [--skip-turbolinks], [--no-skip-turbolinks]        # Skip turbolinks gem
+  -T, [--skip-test], [--no-skip-test]                    # Skip test files
+      [--dev], [--no-dev]                                # Setup the application with Gemfile pointing to your Rails checkout
+      [--edge], [--no-edge]                              # Setup the application with Gemfile pointing to Rails repository
+      [--rc=RC]                                          # Path to file containing extra configuration options for rails command
+      [--no-rc], [--no-no-rc]                            # Skip loading of extra configuration options from .railsrc file
+      [--api], [--no-api]                                # Preconfigure smaller stack for API only apps
+
+Runtime options:
+  -f, [--force]                    # Overwrite files that already exist
+  -p, [--pretend], [--no-pretend]  # Run but do not make any changes
+  -q, [--quiet], [--no-quiet]      # Suppress status output
+  -s, [--skip], [--no-skip]        # Skip files that already exist
+
+Rails options:
+  -h, [--help], [--no-help]        # Show this help message and quit
+  -v, [--version], [--no-version]  # Show Rails version number and quit
+
+Description:
+    The 'rails new' command creates a new Rails application with a default
+    directory structure and configuration at the path you specify.
+
+    You can specify extra command-line arguments to be used every time
+    'rails new' runs in the .railsrc configuration file in your home directory.
+
+    Note that the arguments specified in the .railsrc file don't affect the
+    defaults values shown above in this help message.
+
+Example:
+    rails new ~/Code/Ruby/weblog
+
+    This generates a skeletal Rails installation in ~/Code/Ruby/weblog.
+jayanzaman ~/Documents/GeneralAssembly/web_development_learning/web_development_learning/rails on master[?]
+$ rails g controllers articles
+Usage:
+  rails new APP_PATH [options]
+
+Options:
+  -r, [--ruby=PATH]                                      # Path to the Ruby binary of your choice
+                                                         # Default: /Users/jayanzaman/.rbenv/versions/2.2.3/bin/ruby
+  -m, [--template=TEMPLATE]                              # Path to some application template (can be a filesystem path or URL)
+  -d, [--database=DATABASE]                              # Preconfigure for selected database (options: mysql/oracle/postgresql/sqlite3/frontbase/ibm_db/sqlserver/jdbcmysql/jdbcsqlite3/jdbcpostgresql/jdbc)
+                                                         # Default: sqlite3
+  -j, [--javascript=JAVASCRIPT]                          # Preconfigure for selected JavaScript library
+                                                         # Default: jquery
+      [--skip-gemfile], [--no-skip-gemfile]              # Don't create a Gemfile
+  -B, [--skip-bundle], [--no-skip-bundle]                # Don't run bundle install
+  -G, [--skip-git], [--no-skip-git]                      # Skip .gitignore file
+      [--skip-keeps], [--no-skip-keeps]                  # Skip source control .keep files
+  -M, [--skip-action-mailer], [--no-skip-action-mailer]  # Skip Action Mailer files
+  -O, [--skip-active-record], [--no-skip-active-record]  # Skip Active Record files
+  -P, [--skip-puma], [--no-skip-puma]                    # Skip Puma related files
+  -C, [--skip-action-cable], [--no-skip-action-cable]    # Skip Action Cable files
+  -S, [--skip-sprockets], [--no-skip-sprockets]          # Skip Sprockets files
+      [--skip-spring], [--no-skip-spring]                # Don't install Spring application preloader
+      [--skip-listen], [--no-skip-listen]                # Don't generate configuration that depends on the listen gem
+  -J, [--skip-javascript], [--no-skip-javascript]        # Skip JavaScript files
+      [--skip-turbolinks], [--no-skip-turbolinks]        # Skip turbolinks gem
+  -T, [--skip-test], [--no-skip-test]                    # Skip test files
+      [--dev], [--no-dev]                                # Setup the application with Gemfile pointing to your Rails checkout
+      [--edge], [--no-edge]                              # Setup the application with Gemfile pointing to Rails repository
+      [--rc=RC]                                          # Path to file containing extra configuration options for rails command
+      [--no-rc], [--no-no-rc]                            # Skip loading of extra configuration options from .railsrc file
+      [--api], [--no-api]                                # Preconfigure smaller stack for API only apps
+
+Runtime options:
+  -f, [--force]                    # Overwrite files that already exist
+  -p, [--pretend], [--no-pretend]  # Run but do not make any changes
+  -q, [--quiet], [--no-quiet]      # Suppress status output
+  -s, [--skip], [--no-skip]        # Skip files that already exist
+
+Rails options:
+  -h, [--help], [--no-help]        # Show this help message and quit
+  -v, [--version], [--no-version]  # Show Rails version number and quit
+
+Description:
+    The 'rails new' command creates a new Rails application with a default
+    directory structure and configuration at the path you specify.
+
+    You can specify extra command-line arguments to be used every time
+    'rails new' runs in the .railsrc configuration file in your home directory.
+
+    Note that the arguments specified in the .railsrc file don't affect the
+    defaults values shown above in this help message.
+
+Example:
+    rails new ~/Code/Ruby/weblog
+
+    This generates a skeletal Rails installation in ~/Code/Ruby/weblog.
+jayanzaman ~/Documents/GeneralAssembly/web_development_learning/web_development_learning/rails on master[?]
+$ ls
+first_rails_app/  important_for_rails.rtf
+jayanzaman ~/Documents/GeneralAssembly/web_development_learning/web_development_learning/rails on master[?]
+$ cd first_rails_app/
+jayanzaman ~/Documents/GeneralAssembly/web_development_learning/web_development_learning/rails/first_rails_app on master[?]
+$ rails g controller articles
+Running via Spring preloader in process 62939
+Expected string default value for '--jbuilder'; got true (boolean)
+Expected string default value for '--helper'; got true (boolean)
+Expected string default value for '--assets'; got true (boolean)
+      create  app/controllers/articles_controller.rb
+      invoke  erb
+      create    app/views/articles
+      invoke  test_unit
+      create    test/controllers/articles_controller_test.rb
+      invoke  helper
+      create    app/helpers/articles_helper.rb
+      invoke    test_unit
+      invoke  assets
+      invoke    coffee
+      create      app/assets/javascripts/articles.coffee
+      invoke    scss
+      create      app/assets/stylesheets/articles.scss
+jayanzaman ~/Documents/GeneralAssembly/web_development_learning/web_development_learning/rails/first_rails_app on master[?]
+$ rails s
+=> Booting Puma
+=> Rails 5.0.0.1 application starting in development on http://localhost:3000
+=> Run `rails server -h` for more startup options
+Puma starting in single mode...
+* Version 3.6.2 (ruby 2.2.3-p173), codename: Sleepy Sunday Serenity
+* Min threads: 5, max threads: 5
+* Environment: development
+* Listening on tcp://localhost:3000
+Use Ctrl-C to stop
+^CExiting
+jayanzaman ~/Documents/GeneralAssembly/web_development_learning/web_development_learning/rails/first_rails_app on master[?]
+$ rails s
+=> Booting Puma
+=> Rails 5.0.0.1 application starting in development on http://localhost:3000
+=> Run `rails server -h` for more startup options
+Puma starting in single mode...
+* Version 3.6.2 (ruby 2.2.3-p173), codename: Sleepy Sunday Serenity
+* Min threads: 5, max threads: 5
+* Environment: development
+* Listening on tcp://localhost:3000
+Use Ctrl-C to stop
+Started GET "/" for ::1 at 2016-12-08 15:08:18 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /Users/jayanzaman/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-5.0.0.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/jayanzaman/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-5.0.0.1/lib/rails/templates/rails/welcome/index.html.erb (3.1ms)
+Completed 200 OK in 17ms (Views: 7.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articles" for ::1 at 2016-12-08 15:08:42 -0500
+Processing by ArticlesController#index as HTML
+Completed 406 Not Acceptable in 69ms (ActiveRecord: 0.0ms)
+
+
+
+ActionController::UnknownFormat (ArticlesController#index is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not… nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+
+actionpack (5.0.0.1) lib/action_controller/metal/implicit_render.rb:56:in `default_render'
+actionpack (5.0.0.1) lib/action_controller/metal/basic_implicit_render.rb:4:in `block in send_action'
+actionpack (5.0.0.1) lib/action_controller/metal/basic_implicit_render.rb:4:in `tap'
+actionpack (5.0.0.1) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+actionpack (5.0.0.1) lib/abstract_controller/base.rb:188:in `process_action'
+actionpack (5.0.0.1) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.0.0.1) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:126:in `call'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:126:in `call'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:506:in `block (2 levels) in compile'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:455:in `call'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:455:in `call'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:101:in `__run_callbacks__'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:750:in `_run_process_action_callbacks'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.0.1) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.0.0.1) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.0.0.1) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.0.0.1) lib/active_support/notifications.rb:164:in `block in instrument'
+activesupport (5.0.0.1) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.0.0.1) lib/active_support/notifications.rb:164:in `instrument'
+actionpack (5.0.0.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.0.0.1) lib/action_controller/metal/params_wrapper.rb:248:in `process_action'
+activerecord (5.0.0.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+actionpack (5.0.0.1) lib/abstract_controller/base.rb:126:in `process'
+actionview (5.0.0.1) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.0.0.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (5.0.0.1) lib/action_controller/metal.rb:262:in `dispatch'
+actionpack (5.0.0.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (5.0.0.1) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.0.0.1) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.0.1) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.0.1) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.0.1) lib/action_dispatch/routing/route_set.rb:725:in `call'
+rack (2.0.1) lib/rack/etag.rb:25:in `call'
+rack (2.0.1) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.1) lib/rack/head.rb:12:in `call'
+rack (2.0.1) lib/rack/session/abstract/id.rb:222:in `context'
+rack (2.0.1) lib/rack/session/abstract/id.rb:216:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.0.1) lib/active_record/migration.rb:552:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `call'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /Users/jayanzaman/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/jayanzaman/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/jayanzaman/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.8ms)
+  Rendering /Users/jayanzaman/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/jayanzaman/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendering /Users/jayanzaman/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/jayanzaman/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/jayanzaman/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (75.7ms)
+Started GET "/articles" for ::1 at 2016-12-08 15:15:19 -0500
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 615ms (Views: 613.1ms | ActiveRecord: 0.0ms)
+
+
+^CExiting
+jayanzaman ~/Documents/GeneralAssembly/web_development_learning/web_development_learning/rails/first_rails_app on master[?]
+$ rails s
+=> Booting Puma
+=> Rails 5.0.0.1 application starting in development on http://localhost:3000
+=> Run `rails server -h` for more startup options
+Puma starting in single mode...
+* Version 3.6.2 (ruby 2.2.3-p173), codename: Sleepy Sunday Serenity
+* Min threads: 5, max threads: 5
+* Environment: development
+* Listening on tcp://localhost:3000
+Use Ctrl-C to stop
+Started GET "/articles/4" for ::1 at 2016-12-08 15:19:00 -0500
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"4"}
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 254ms (Views: 240.7ms | ActiveRecord: 0.0ms)
+
+
+^CExiting
+jayanzaman ~/Documents/GeneralAssembly/web_development_learning/web_development_learning/rails/first_rails_app on master[?]
+$ rails s
+=> Booting Puma
+=> Rails 5.0.0.1 application starting in development on http://localhost:3000
+=> Run `rails server -h` for more startup options
+Puma starting in single mode...
+* Version 3.6.2 (ruby 2.2.3-p173), codename: Sleepy Sunday Serenity
+* Min threads: 5, max threads: 5
+* Environment: development
+* Listening on tcp://localhost:3000
+Use Ctrl-C to stop
+Started GET "/articles/4" for ::1 at 2016-12-08 15:23:35 -0500
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"4"}
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+
+app/controllers/articles_controller.rb:6:in `show'
+  Rendering /Users/jayanzaman/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/jayanzaman/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/jayanzaman/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.2ms)
+  Rendering /Users/jayanzaman/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/jayanzaman/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendering /Users/jayanzaman/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/jayanzaman/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/jayanzaman/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (74.9ms)
+Started GET "/articles/4" for ::1 at 2016-12-08 15:24:16 -0500
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"4"}
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 210ms (Views: 208.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articles/5" for ::1 at 2016-12-08 15:24:20 -0500
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"5"}
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 19ms (Views: 16.5ms | ActiveRecord: 0.0ms)
+
+
+^CExiting
+jayanzaman ~/Documents/GeneralAssembly/web_development_learning/web_development_learning/rails/first_rails_app on master[?]
+$ rails routes
+      Prefix Verb   URI Pattern                  Controller#Action
+    articles GET    /articles(.:format)          articles#index
+             GET    /articles/:id(.:format)      articles#show
+             POST   /articles(.:format)          articles#create
+             PUT    /articles/:id(.:format)      articles#update
+             DELETE /articles/:id(.:format)      articles#destroy
+articles_new GET    /articles/new(.:format)      articles#new
+             GET    /articles/:id/edit(.:format) articles#edit
+       users GET    /users(.:format)             users#index
+             GET    /users/:id(.:format)         users#show
+             POST   /users(.:format)             users#create
+             PUT    /users/:id(.:format)         users#update
+             DELETE /users/:id(.:format)         users#destroy
+   users_new GET    /users/new(.:format)         users#new
+             GET    /users/:id/edit(.:format)    users#edit
+jayanzaman ~/Documents/GeneralAssembly/web_development_learning/web_development_learning/rails/first_rails_app on master[?]
+$ rails routes
+      Prefix Verb   URI Pattern                  Controller#Action
+    articles GET    /articles(.:format)          articles#index
+             POST   /articles(.:format)          articles#create
+ new_article GET    /articles/new(.:format)      articles#new
+edit_article GET    /articles/:id/edit(.:format) articles#edit
+     article GET    /articles/:id(.:format)      articles#show
+             PATCH  /articles/:id(.:format)      articles#update
+             PUT    /articles/:id(.:format)      articles#update
+             DELETE /articles/:id(.:format)      articles#destroy
+        dogs GET    /dogs(.:format)              dogs#index
+             POST   /dogs(.:format)              dogs#create
+     new_dog GET    /dogs/new(.:format)          dogs#new
+    edit_dog GET    /dogs/:id/edit(.:format)     dogs#edit
+         dog GET    /dogs/:id(.:format)          dogs#show
+             PATCH  /dogs/:id(.:format)          dogs#update
+             PUT    /dogs/:id(.:format)          dogs#update
+             DELETE /dogs/:id(.:format)          dogs#destroy
+       users GET    /users(.:format)             users#index
+             POST   /users(.:format)             users#create
+    new_user GET    /users/new(.:format)         users#new
+   edit_user GET    /users/:id/edit(.:format)    users#edit
+        user GET    /users/:id(.:format)         users#show
+             PATCH  /users/:id(.:format)         users#update
+             PUT    /users/:id(.:format)         users#update
+             DELETE /users/:id(.:format)         users#destroy
+jayanzaman ~/Documents/GeneralAssembly/web_development_learning/web_development_learning/rails/first_rails_app on master[?]
+$ rails routes
+      Prefix Verb   URI Pattern                  Controller#Action
+    articles GET    /articles(.:format)          articles#index
+             POST   /articles(.:format)          articles#create
+ new_article GET    /articles/new(.:format)      articles#new
+edit_article GET    /articles/:id/edit(.:format) articles#edit
+     article GET    /articles/:id(.:format)      articles#show
+             PATCH  /articles/:id(.:format)      articles#update
+             PUT    /articles/:id(.:format)      articles#update
+             DELETE /articles/:id(.:format)      articles#destroy
+        dogs GET    /dogs(.:format)              dogs#index
+             POST   /dogs(.:format)              dogs#create
+     new_dog GET    /dogs/new(.:format)          dogs#new
+    edit_dog GET    /dogs/:id/edit(.:format)     dogs#edit
+         dog GET    /dogs/:id(.:format)          dogs#show
+             PATCH  /dogs/:id(.:format)          dogs#update
+             PUT    /dogs/:id(.:format)          dogs#update
+             DELETE /dogs/:id(.:format)          dogs#destroy
+       users GET    /users(.:format)             users#index
+        user GET    /users/:id(.:format)         users#show
+jayanzaman ~/Documents/GeneralAssembly/web_development_learning/web_development_learning/rails/first_rails_app on master[?]
+$ rails routes
+      Prefix Verb   URI Pattern                  Controller#Action
+    articles GET    /articles(.:format)          articles#index
+             POST   /articles(.:format)          articles#create
+ new_article GET    /articles/new(.:format)      articles#new
+edit_article GET    /articles/:id/edit(.:format) articles#edit
+     article GET    /articles/:id(.:format)      articles#show
+             PATCH  /articles/:id(.:format)      articles#update
+             PUT    /articles/:id(.:format)      articles#update
+             DELETE /articles/:id(.:format)      articles#destroy
+       users GET    /users(.:format)             users#index
+        user GET    /users/:id(.:format)         users#show
+        dogs GET    /dogs(.:format)              dogs#index
+             POST   /dogs(.:format)              dogs#create
+     new_dog GET    /dogs/new(.:format)          dogs#new
+    edit_dog GET    /dogs/:id/edit(.:format)     dogs#edit
+         dog GET    /dogs/:id(.:format)          dogs#show
+             PATCH  /dogs/:id(.:format)          dogs#update
+             PUT    /dogs/:id(.:format)          dogs#update
+jayanzaman ~/Documents/GeneralAssembly/web_development_learning/web_development_learning/rails/first_rails_app on master[?]
+$ rails routes
+      Prefix Verb   URI Pattern                  Controller#Action
+    articles GET    /articles(.:format)          articles#index
+             POST   /articles(.:format)          articles#create
+ new_article GET    /articles/new(.:format)      articles#new
+edit_article GET    /articles/:id/edit(.:format) articles#edit
+     article GET    /articles/:id(.:format)      articles#show
+             PATCH  /articles/:id(.:format)      articles#update
+             PUT    /articles/:id(.:format)      articles#update
+             DELETE /articles/:id(.:format)      articles#destroy
+        cats GET    /cats(.:format)              cats#index
+             POST   /cats(.:format)              cats#create
+     new_cat GET    /cats/new(.:format)          cats#new
+    edit_cat GET    /cats/:id/edit(.:format)     cats#edit
+         cat GET    /cats/:id(.:format)          cats#show
+             PATCH  /cats/:id(.:format)          cats#update
+             PUT    /cats/:id(.:format)          cats#update
+             DELETE /cats/:id(.:format)          cats#destroy
+       users GET    /users(.:format)             users#index
+        user GET    /users/:id(.:format)         users#show
+        dogs GET    /dogs(.:format)              dogs#index
+             POST   /dogs(.:format)              dogs#create
+     new_dog GET    /dogs/new(.:format)          dogs#new
+    edit_dog GET    /dogs/:id/edit(.:format)     dogs#edit
+         dog GET    /dogs/:id(.:format)          dogs#show
+             PATCH  /dogs/:id(.:format)          dogs#update
+             PUT    /dogs/:id(.:format)          dogs#update
+jayanzaman ~/Documents/GeneralAssembly/web_development_learning/web_development_learning/rails/first_rails_app on master[?]
+$

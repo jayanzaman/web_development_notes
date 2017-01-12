@@ -1,0 +1,1 @@
+json.array! @create_rocks, partial: 'create_rocks/create_rock', as: :create_rock

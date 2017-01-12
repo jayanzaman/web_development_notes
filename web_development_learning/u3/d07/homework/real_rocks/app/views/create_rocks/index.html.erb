@@ -1,0 +1,13 @@
+<p id="notice"><%= notice %></p>
+<%= render 'gallery', create_rock: @create_rock %>
+<% @create_rocks.each do |create_rock| %>
+<ul>
+  <li><a href="/create_rocks/<%= create_rock.id %>"><%= create_rock.name %></a></li>
+  <li><%= create_rock.description %></li>
+  <img src="<%= create_rock.image %>">
+  <li><%= link_to 'Edit', edit_create_rock_path(create_rock) %></li>
+  <li><%= link_to 'Destroy', create_rock, method: :delete, data: { confirm: 'Are you sure?' } %></li>
+</ul>
+<% end %>
+<br>
+<%= link_to 'Create New Rock', new_create_rock_path %>

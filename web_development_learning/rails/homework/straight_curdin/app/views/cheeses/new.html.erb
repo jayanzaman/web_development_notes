@@ -1,0 +1,13 @@
+<h1>Add a new cheese</h1>
+
+<form accept-charset="UTF-8" action="/cheeses" method="POST">
+<%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+  <h6>Name: <input name="name" /></h6>
+  <h6>Milk Type: <input name="milk_type" /></h6>
+  <h6>Description: <input name="description" /></h6>
+  <h6>Stank Level: <input name="stank_level" /></h6>
+  <h6>Image Path: <input name="image_url"  /></h6>
+  <button>Submit</button>
+</form>
+
+

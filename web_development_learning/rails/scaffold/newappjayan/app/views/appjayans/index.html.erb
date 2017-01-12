@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Appjayans</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Game</th>
+      <th>Score</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @appjayans.each do |appjayan| %>
+      <tr>
+        <td><%= appjayan.game %></td>
+        <td><%= appjayan.score %></td>
+        <td><%= link_to 'Show', appjayan %></td>
+        <td><%= link_to 'Edit', edit_appjayan_path(appjayan) %></td>
+        <td><%= link_to 'Destroy', appjayan, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Appjayan', new_appjayan_path %>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Species Show</title>
+    <link rel="stylesheet" href="">
+  </head>
+  <body>
+    <h1>Species</h1>
+    {{#species}}
+    <p><a href="/species/{{id}}">{{species}}</a></p>
+    <p>{{family}}</p>
+    <p>{{habitat}}</p>
+    <p>{{diet}}</p>
+    <p><a href="/planets/{{planet}}">{{planet}}</a></p>
+    <br>
+    <form method="POST" action="/species/{{id}}?_method=DELETE">
+      <button>DELETE</button>
+    </form>
+    {{/species}}
+  </body>
+</html>

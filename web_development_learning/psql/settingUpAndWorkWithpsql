@@ -1,0 +1,1410 @@
+Last login: Tue Nov 15 13:40:51 on ttys000
+jayanzaman ~/documents
+$ createdb
+createdb: could not connect to database template1: FATAL:  role "jayanzaman" does not exist
+jayanzaman ~/documents
+$ psql
+psql: FATAL:  role "jayanzaman" does not exist
+jayanzaman ~/documents
+$ psql -U postgres
+psql: FATAL:  role "postgres" does not exist
+jayanzaman ~/documents
+$ psql -U _postgres
+psql: FATAL:  role "_postgres" does not exist
+jayanzaman ~/documents
+$ cd /usr/local/bin/postgres
+-bash: cd: /usr/local/bin/postgres: Not a directory
+jayanzaman ~/documents
+$ ls
+GeneralAssembly/  Others/  Resumes/
+jayanzaman ~/documents
+$ which psql
+/usr/local/bin/psql
+jayanzaman ~/documents
+$ which postgres
+/usr/local/bin/postgres
+jayanzaman ~/documents
+$ vim /usr/local/bin/postgres
+jayanzaman ~/documents
+$ cd /usr/local/
+jayanzaman /usr/local
+$ ls
+Cellar/  Frameworks/  Homebrew/  SUPPORTERS.md  apache-ant-1.9.6/  bin/  etc/  heroku/  include/  lib/  opt/  sbin/  share/  var/
+jayanzaman /usr/local
+$ cd lib/
+jayanzaman /usr/local/lib
+$ ls
+ImageMagick@          libMagickWand-6.Q16.2.dylib@  libecpg.dylib@         libgpg-error.0.dylib@  libksba.dylib@      libpgtypes.3.6.dylib@  libpq.a@    libtiffxx.dylib@
+dtrace/           libMagickWand-6.Q16.a@      libecpg_compat.3.7.dylib@  libgpg-error.a@        libltdl.7.dylib@      libpgtypes.3.dylib@    libpq.dylib@    libxdot.4.dylib@
+graphviz@         libMagickWand-6.Q16.dylib@    libecpg_compat.3.dylib@    libgpg-error.dylib@    libltdl.a@      libpgtypes.a@    libtidy.5.2.0.dylib@  libxdot.dylib@
+libMagick++-6.Q16.6.dylib@    libMagickWand-6.Q16.la@     libecpg_compat.a@        libgvc.6.dylib@        libltdl.dylib@      libpgtypes.dylib@    libtidy.5.dylib@  libyaml-0.2.dylib@
+libMagick++-6.Q16.a@        libcdt.5.dylib@       libecpg_compat.dylib@      libgvc.dylib@        liblzma.5.dylib@      libpng.a@      libtidy.dylib@  libyaml.a@
+libMagick++-6.Q16.dylib@      libcdt.dylib@       libfreetype.6.dylib@       libgvpr.2.dylib@       liblzma.a@      libpng.dylib@    libtidys.a@     libyaml.dylib@
+libMagick++-6.Q16.la@       libcgraph.6.dylib@      libfreetype.a@         libgvpr.dylib@       liblzma.dylib@      libpng16.16.dylib@     libtiff.5.dylib@  perl5/
+libMagickCore-6.Q16.2.dylib@  libcgraph.dylib@        libfreetype.dylib@         libjpeg.8.dylib@       libpathplan.4.dylib@  libpng16.a@      libtiff.a@    pkgconfig/
+libMagickCore-6.Q16.a@        libecpg.6.7.dylib@      libgdbm.4.dylib@         libjpeg.a@       libpathplan.dylib@    libpng16.dylib@    libtiff.dylib@  postgresql@
+libMagickCore-6.Q16.dylib@    libecpg.6.dylib@        libgdbm.a@           libjpeg.dylib@       libpgcommon.a@      libpq.5.8.dylib@     libtiffxx.5.dylib@  python2.7/
+libMagickCore-6.Q16.la@       libecpg.a@        libgdbm.dylib@         libksba.8.dylib@       libpgport.a@      libpq.5.dylib@     libtiffxx.a@    readtags.o@
+jayanzaman /usr/local/lib
+$ cd ..
+jayanzaman /usr/local
+$ ls
+Cellar/  Frameworks/  Homebrew/  SUPPORTERS.md  apache-ant-1.9.6/  bin/  etc/  heroku/  include/  lib/  opt/  sbin/  share/  var/
+jayanzaman /usr/local
+$ cd etc/
+jayanzaman /usr/local/etc
+$ ls
+ImageMagick-6/  bash_completion.d/  gitconfig  openssl/
+jayanzaman /usr/local/etc
+$ cd ..
+jayanzaman /usr/local
+$ ls
+Cellar/  Frameworks/  Homebrew/  SUPPORTERS.md  apache-ant-1.9.6/  bin/  etc/  heroku/  include/  lib/  opt/  sbin/  share/  var/
+jayanzaman /usr/local
+$ cd var/
+jayanzaman /usr/local/var
+$ ls
+homebrew/  locate/  log/  postgres/
+jayanzaman /usr/local/var
+$ cd postgres/
+jayanzaman /usr/local/var/postgres
+$ ls
+PG_VERSION*  global/   pg_commit_ts/  pg_hba.conf*    pg_logical/    pg_notify/    pg_serial/   pg_stat/  pg_subtrans/  pg_twophase/  postgresql.auto.conf*  postmaster.opts
+base/      pg_clog/  pg_dynshmem/   pg_ident.conf*  pg_multixact/  pg_replslot/  pg_snapshots/  pg_stat_tmp/  pg_tblspc/    pg_xlog/      postgresql.conf*     postmaster.pid
+jayanzaman /usr/local/var/postgres
+$ pwd
+/usr/local/var/postgres
+jayanzaman /usr/local/var/postgres
+$ cd ~/
+jayanzaman ~
+$ rm -rf /usr/local/var/postgres
+removed '/usr/local/var/postgres/base/1/112'
+removed '/usr/local/var/postgres/base/1/113'
+removed '/usr/local/var/postgres/base/1/1247'
+removed '/usr/local/var/postgres/base/1/12472'
+removed '/usr/local/var/postgres/base/1/12472_fsm'
+removed '/usr/local/var/postgres/base/1/12472_vm'
+removed '/usr/local/var/postgres/base/1/12474'
+removed '/usr/local/var/postgres/base/1/12476'
+removed '/usr/local/var/postgres/base/1/12477'
+removed '/usr/local/var/postgres/base/1/12477_fsm'
+removed '/usr/local/var/postgres/base/1/12477_vm'
+removed '/usr/local/var/postgres/base/1/12479'
+removed '/usr/local/var/postgres/base/1/1247_fsm'
+removed '/usr/local/var/postgres/base/1/1247_vm'
+removed '/usr/local/var/postgres/base/1/12481'
+removed '/usr/local/var/postgres/base/1/12482'
+removed '/usr/local/var/postgres/base/1/12482_fsm'
+removed '/usr/local/var/postgres/base/1/12482_vm'
+removed '/usr/local/var/postgres/base/1/12484'
+removed '/usr/local/var/postgres/base/1/12486'
+removed '/usr/local/var/postgres/base/1/12487'
+removed '/usr/local/var/postgres/base/1/12487_fsm'
+removed '/usr/local/var/postgres/base/1/12487_vm'
+removed '/usr/local/var/postgres/base/1/12489'
+removed '/usr/local/var/postgres/base/1/1249'
+removed '/usr/local/var/postgres/base/1/12491'
+removed '/usr/local/var/postgres/base/1/12492'
+removed '/usr/local/var/postgres/base/1/12492_fsm'
+removed '/usr/local/var/postgres/base/1/12492_vm'
+removed '/usr/local/var/postgres/base/1/12494'
+removed '/usr/local/var/postgres/base/1/12496'
+removed '/usr/local/var/postgres/base/1/12497'
+removed '/usr/local/var/postgres/base/1/12497_fsm'
+removed '/usr/local/var/postgres/base/1/12497_vm'
+removed '/usr/local/var/postgres/base/1/12499'
+removed '/usr/local/var/postgres/base/1/1249_fsm'
+removed '/usr/local/var/postgres/base/1/1249_vm'
+removed '/usr/local/var/postgres/base/1/12501'
+removed '/usr/local/var/postgres/base/1/12502'
+removed '/usr/local/var/postgres/base/1/12504'
+removed '/usr/local/var/postgres/base/1/12506'
+removed '/usr/local/var/postgres/base/1/1255'
+removed '/usr/local/var/postgres/base/1/1255_fsm'
+removed '/usr/local/var/postgres/base/1/1255_vm'
+removed '/usr/local/var/postgres/base/1/1259'
+removed '/usr/local/var/postgres/base/1/1259_fsm'
+removed '/usr/local/var/postgres/base/1/1259_vm'
+removed '/usr/local/var/postgres/base/1/1417'
+removed '/usr/local/var/postgres/base/1/1417_vm'
+removed '/usr/local/var/postgres/base/1/1418'
+removed '/usr/local/var/postgres/base/1/1418_vm'
+removed '/usr/local/var/postgres/base/1/174'
+removed '/usr/local/var/postgres/base/1/175'
+removed '/usr/local/var/postgres/base/1/2187'
+removed '/usr/local/var/postgres/base/1/2328'
+removed '/usr/local/var/postgres/base/1/2328_vm'
+removed '/usr/local/var/postgres/base/1/2336'
+removed '/usr/local/var/postgres/base/1/2336_vm'
+removed '/usr/local/var/postgres/base/1/2337'
+removed '/usr/local/var/postgres/base/1/2600'
+removed '/usr/local/var/postgres/base/1/2600_fsm'
+removed '/usr/local/var/postgres/base/1/2600_vm'
+removed '/usr/local/var/postgres/base/1/2601'
+removed '/usr/local/var/postgres/base/1/2601_fsm'
+removed '/usr/local/var/postgres/base/1/2601_vm'
+removed '/usr/local/var/postgres/base/1/2602'
+removed '/usr/local/var/postgres/base/1/2602_fsm'
+removed '/usr/local/var/postgres/base/1/2602_vm'
+removed '/usr/local/var/postgres/base/1/2603'
+removed '/usr/local/var/postgres/base/1/2603_fsm'
+removed '/usr/local/var/postgres/base/1/2603_vm'
+removed '/usr/local/var/postgres/base/1/2604'
+removed '/usr/local/var/postgres/base/1/2604_vm'
+removed '/usr/local/var/postgres/base/1/2605'
+removed '/usr/local/var/postgres/base/1/2605_fsm'
+removed '/usr/local/var/postgres/base/1/2605_vm'
+removed '/usr/local/var/postgres/base/1/2606'
+removed '/usr/local/var/postgres/base/1/2606_fsm'
+removed '/usr/local/var/postgres/base/1/2606_vm'
+removed '/usr/local/var/postgres/base/1/2607'
+removed '/usr/local/var/postgres/base/1/2607_fsm'
+removed '/usr/local/var/postgres/base/1/2607_vm'
+removed '/usr/local/var/postgres/base/1/2608'
+removed '/usr/local/var/postgres/base/1/2608_fsm'
+removed '/usr/local/var/postgres/base/1/2608_vm'
+removed '/usr/local/var/postgres/base/1/2609'
+removed '/usr/local/var/postgres/base/1/2609_fsm'
+removed '/usr/local/var/postgres/base/1/2609_vm'
+removed '/usr/local/var/postgres/base/1/2610'
+removed '/usr/local/var/postgres/base/1/2610_fsm'
+removed '/usr/local/var/postgres/base/1/2610_vm'
+removed '/usr/local/var/postgres/base/1/2611'
+removed '/usr/local/var/postgres/base/1/2611_vm'
+removed '/usr/local/var/postgres/base/1/2612'
+removed '/usr/local/var/postgres/base/1/2612_fsm'
+removed '/usr/local/var/postgres/base/1/2612_vm'
+removed '/usr/local/var/postgres/base/1/2613'
+removed '/usr/local/var/postgres/base/1/2613_vm'
+removed '/usr/local/var/postgres/base/1/2615'
+removed '/usr/local/var/postgres/base/1/2615_fsm'
+removed '/usr/local/var/postgres/base/1/2615_vm'
+removed '/usr/local/var/postgres/base/1/2616'
+removed '/usr/local/var/postgres/base/1/2616_fsm'
+removed '/usr/local/var/postgres/base/1/2616_vm'
+removed '/usr/local/var/postgres/base/1/2617'
+removed '/usr/local/var/postgres/base/1/2617_fsm'
+removed '/usr/local/var/postgres/base/1/2617_vm'
+removed '/usr/local/var/postgres/base/1/2618'
+removed '/usr/local/var/postgres/base/1/2618_fsm'
+removed '/usr/local/var/postgres/base/1/2618_vm'
+removed '/usr/local/var/postgres/base/1/2619'
+removed '/usr/local/var/postgres/base/1/2619_fsm'
+removed '/usr/local/var/postgres/base/1/2619_vm'
+removed '/usr/local/var/postgres/base/1/2620'
+removed '/usr/local/var/postgres/base/1/2620_vm'
+removed '/usr/local/var/postgres/base/1/2650'
+removed '/usr/local/var/postgres/base/1/2651'
+removed '/usr/local/var/postgres/base/1/2652'
+removed '/usr/local/var/postgres/base/1/2653'
+removed '/usr/local/var/postgres/base/1/2654'
+removed '/usr/local/var/postgres/base/1/2655'
+removed '/usr/local/var/postgres/base/1/2656'
+removed '/usr/local/var/postgres/base/1/2657'
+removed '/usr/local/var/postgres/base/1/2658'
+removed '/usr/local/var/postgres/base/1/2659'
+removed '/usr/local/var/postgres/base/1/2660'
+removed '/usr/local/var/postgres/base/1/2661'
+removed '/usr/local/var/postgres/base/1/2662'
+removed '/usr/local/var/postgres/base/1/2663'
+removed '/usr/local/var/postgres/base/1/2664'
+removed '/usr/local/var/postgres/base/1/2665'
+removed '/usr/local/var/postgres/base/1/2666'
+removed '/usr/local/var/postgres/base/1/2667'
+removed '/usr/local/var/postgres/base/1/2668'
+removed '/usr/local/var/postgres/base/1/2669'
+removed '/usr/local/var/postgres/base/1/2670'
+removed '/usr/local/var/postgres/base/1/2673'
+removed '/usr/local/var/postgres/base/1/2674'
+removed '/usr/local/var/postgres/base/1/2675'
+removed '/usr/local/var/postgres/base/1/2678'
+removed '/usr/local/var/postgres/base/1/2679'
+removed '/usr/local/var/postgres/base/1/2680'
+removed '/usr/local/var/postgres/base/1/2681'
+removed '/usr/local/var/postgres/base/1/2682'
+removed '/usr/local/var/postgres/base/1/2683'
+removed '/usr/local/var/postgres/base/1/2684'
+removed '/usr/local/var/postgres/base/1/2685'
+removed '/usr/local/var/postgres/base/1/2686'
+removed '/usr/local/var/postgres/base/1/2687'
+removed '/usr/local/var/postgres/base/1/2688'
+removed '/usr/local/var/postgres/base/1/2689'
+removed '/usr/local/var/postgres/base/1/2690'
+removed '/usr/local/var/postgres/base/1/2691'
+removed '/usr/local/var/postgres/base/1/2692'
+removed '/usr/local/var/postgres/base/1/2693'
+removed '/usr/local/var/postgres/base/1/2696'
+removed '/usr/local/var/postgres/base/1/2699'
+removed '/usr/local/var/postgres/base/1/2701'
+removed '/usr/local/var/postgres/base/1/2702'
+removed '/usr/local/var/postgres/base/1/2703'
+removed '/usr/local/var/postgres/base/1/2704'
+removed '/usr/local/var/postgres/base/1/2753'
+removed '/usr/local/var/postgres/base/1/2753_fsm'
+removed '/usr/local/var/postgres/base/1/2753_vm'
+removed '/usr/local/var/postgres/base/1/2754'
+removed '/usr/local/var/postgres/base/1/2755'
+removed '/usr/local/var/postgres/base/1/2756'
+removed '/usr/local/var/postgres/base/1/2757'
+removed '/usr/local/var/postgres/base/1/2830'
+removed '/usr/local/var/postgres/base/1/2830_vm'
+removed '/usr/local/var/postgres/base/1/2831'
+removed '/usr/local/var/postgres/base/1/2832'
+removed '/usr/local/var/postgres/base/1/2832_vm'
+removed '/usr/local/var/postgres/base/1/2833'
+removed '/usr/local/var/postgres/base/1/2834'
+removed '/usr/local/var/postgres/base/1/2834_vm'
+removed '/usr/local/var/postgres/base/1/2835'
+removed '/usr/local/var/postgres/base/1/2836'
+removed '/usr/local/var/postgres/base/1/2836_vm'
+removed '/usr/local/var/postgres/base/1/2837'
+removed '/usr/local/var/postgres/base/1/2838'
+removed '/usr/local/var/postgres/base/1/2838_fsm'
+removed '/usr/local/var/postgres/base/1/2838_vm'
+removed '/usr/local/var/postgres/base/1/2839'
+removed '/usr/local/var/postgres/base/1/2840'
+removed '/usr/local/var/postgres/base/1/2840_fsm'
+removed '/usr/local/var/postgres/base/1/2840_vm'
+removed '/usr/local/var/postgres/base/1/2841'
+removed '/usr/local/var/postgres/base/1/2995'
+removed '/usr/local/var/postgres/base/1/2995_vm'
+removed '/usr/local/var/postgres/base/1/2996'
+removed '/usr/local/var/postgres/base/1/3079'
+removed '/usr/local/var/postgres/base/1/3079_fsm'
+removed '/usr/local/var/postgres/base/1/3079_vm'
+removed '/usr/local/var/postgres/base/1/3080'
+removed '/usr/local/var/postgres/base/1/3081'
+removed '/usr/local/var/postgres/base/1/3085'
+removed '/usr/local/var/postgres/base/1/3118'
+removed '/usr/local/var/postgres/base/1/3118_vm'
+removed '/usr/local/var/postgres/base/1/3119'
+removed '/usr/local/var/postgres/base/1/3164'
+removed '/usr/local/var/postgres/base/1/3256'
+removed '/usr/local/var/postgres/base/1/3256_vm'
+removed '/usr/local/var/postgres/base/1/3257'
+removed '/usr/local/var/postgres/base/1/3258'
+removed '/usr/local/var/postgres/base/1/3455'
+removed '/usr/local/var/postgres/base/1/3456'
+removed '/usr/local/var/postgres/base/1/3456_fsm'
+removed '/usr/local/var/postgres/base/1/3456_vm'
+removed '/usr/local/var/postgres/base/1/3466'
+removed '/usr/local/var/postgres/base/1/3466_vm'
+removed '/usr/local/var/postgres/base/1/3467'
+removed '/usr/local/var/postgres/base/1/3468'
+removed '/usr/local/var/postgres/base/1/3501'
+removed '/usr/local/var/postgres/base/1/3501_vm'
+removed '/usr/local/var/postgres/base/1/3502'
+removed '/usr/local/var/postgres/base/1/3503'
+removed '/usr/local/var/postgres/base/1/3534'
+removed '/usr/local/var/postgres/base/1/3541'
+removed '/usr/local/var/postgres/base/1/3541_fsm'
+removed '/usr/local/var/postgres/base/1/3541_vm'
+removed '/usr/local/var/postgres/base/1/3542'
+removed '/usr/local/var/postgres/base/1/3574'
+removed '/usr/local/var/postgres/base/1/3575'
+removed '/usr/local/var/postgres/base/1/3576'
+removed '/usr/local/var/postgres/base/1/3576_vm'
+removed '/usr/local/var/postgres/base/1/3596'
+removed '/usr/local/var/postgres/base/1/3596_vm'
+removed '/usr/local/var/postgres/base/1/3597'
+removed '/usr/local/var/postgres/base/1/3598'
+removed '/usr/local/var/postgres/base/1/3598_vm'
+removed '/usr/local/var/postgres/base/1/3599'
+removed '/usr/local/var/postgres/base/1/3600'
+removed '/usr/local/var/postgres/base/1/3600_fsm'
+removed '/usr/local/var/postgres/base/1/3600_vm'
+removed '/usr/local/var/postgres/base/1/3601'
+removed '/usr/local/var/postgres/base/1/3601_fsm'
+removed '/usr/local/var/postgres/base/1/3601_vm'
+removed '/usr/local/var/postgres/base/1/3602'
+removed '/usr/local/var/postgres/base/1/3602_fsm'
+removed '/usr/local/var/postgres/base/1/3602_vm'
+removed '/usr/local/var/postgres/base/1/3603'
+removed '/usr/local/var/postgres/base/1/3603_fsm'
+removed '/usr/local/var/postgres/base/1/3603_vm'
+removed '/usr/local/var/postgres/base/1/3604'
+removed '/usr/local/var/postgres/base/1/3605'
+removed '/usr/local/var/postgres/base/1/3606'
+removed '/usr/local/var/postgres/base/1/3607'
+removed '/usr/local/var/postgres/base/1/3608'
+removed '/usr/local/var/postgres/base/1/3609'
+removed '/usr/local/var/postgres/base/1/3712'
+removed '/usr/local/var/postgres/base/1/3764'
+removed '/usr/local/var/postgres/base/1/3764_fsm'
+removed '/usr/local/var/postgres/base/1/3764_vm'
+removed '/usr/local/var/postgres/base/1/3766'
+removed '/usr/local/var/postgres/base/1/3767'
+removed '/usr/local/var/postgres/base/1/548'
+removed '/usr/local/var/postgres/base/1/549'
+removed '/usr/local/var/postgres/base/1/826'
+removed '/usr/local/var/postgres/base/1/826_vm'
+removed '/usr/local/var/postgres/base/1/827'
+removed '/usr/local/var/postgres/base/1/828'
+removed '/usr/local/var/postgres/base/1/pg_filenode.map'
+removed '/usr/local/var/postgres/base/1/PG_VERSION'
+removed directory '/usr/local/var/postgres/base/1'
+removed '/usr/local/var/postgres/base/12636/112'
+removed '/usr/local/var/postgres/base/12636/113'
+removed '/usr/local/var/postgres/base/12636/1247'
+removed '/usr/local/var/postgres/base/12636/12472'
+removed '/usr/local/var/postgres/base/12636/12472_fsm'
+removed '/usr/local/var/postgres/base/12636/12472_vm'
+removed '/usr/local/var/postgres/base/12636/12474'
+removed '/usr/local/var/postgres/base/12636/12476'
+removed '/usr/local/var/postgres/base/12636/12477'
+removed '/usr/local/var/postgres/base/12636/12477_fsm'
+removed '/usr/local/var/postgres/base/12636/12477_vm'
+removed '/usr/local/var/postgres/base/12636/12479'
+removed '/usr/local/var/postgres/base/12636/1247_fsm'
+removed '/usr/local/var/postgres/base/12636/1247_vm'
+removed '/usr/local/var/postgres/base/12636/12481'
+removed '/usr/local/var/postgres/base/12636/12482'
+removed '/usr/local/var/postgres/base/12636/12482_fsm'
+removed '/usr/local/var/postgres/base/12636/12482_vm'
+removed '/usr/local/var/postgres/base/12636/12484'
+removed '/usr/local/var/postgres/base/12636/12486'
+removed '/usr/local/var/postgres/base/12636/12487'
+removed '/usr/local/var/postgres/base/12636/12487_fsm'
+removed '/usr/local/var/postgres/base/12636/12487_vm'
+removed '/usr/local/var/postgres/base/12636/12489'
+removed '/usr/local/var/postgres/base/12636/1249'
+removed '/usr/local/var/postgres/base/12636/12491'
+removed '/usr/local/var/postgres/base/12636/12492'
+removed '/usr/local/var/postgres/base/12636/12492_fsm'
+removed '/usr/local/var/postgres/base/12636/12492_vm'
+removed '/usr/local/var/postgres/base/12636/12494'
+removed '/usr/local/var/postgres/base/12636/12496'
+removed '/usr/local/var/postgres/base/12636/12497'
+removed '/usr/local/var/postgres/base/12636/12497_fsm'
+removed '/usr/local/var/postgres/base/12636/12497_vm'
+removed '/usr/local/var/postgres/base/12636/12499'
+removed '/usr/local/var/postgres/base/12636/1249_fsm'
+removed '/usr/local/var/postgres/base/12636/1249_vm'
+removed '/usr/local/var/postgres/base/12636/12501'
+removed '/usr/local/var/postgres/base/12636/12502'
+removed '/usr/local/var/postgres/base/12636/12504'
+removed '/usr/local/var/postgres/base/12636/12506'
+removed '/usr/local/var/postgres/base/12636/1255'
+removed '/usr/local/var/postgres/base/12636/1255_fsm'
+removed '/usr/local/var/postgres/base/12636/1255_vm'
+removed '/usr/local/var/postgres/base/12636/1259'
+removed '/usr/local/var/postgres/base/12636/1259_fsm'
+removed '/usr/local/var/postgres/base/12636/1259_vm'
+removed '/usr/local/var/postgres/base/12636/1417'
+removed '/usr/local/var/postgres/base/12636/1417_vm'
+removed '/usr/local/var/postgres/base/12636/1418'
+removed '/usr/local/var/postgres/base/12636/1418_vm'
+removed '/usr/local/var/postgres/base/12636/174'
+removed '/usr/local/var/postgres/base/12636/175'
+removed '/usr/local/var/postgres/base/12636/2187'
+removed '/usr/local/var/postgres/base/12636/2328'
+removed '/usr/local/var/postgres/base/12636/2328_vm'
+removed '/usr/local/var/postgres/base/12636/2336'
+removed '/usr/local/var/postgres/base/12636/2336_vm'
+removed '/usr/local/var/postgres/base/12636/2337'
+removed '/usr/local/var/postgres/base/12636/2600'
+removed '/usr/local/var/postgres/base/12636/2600_fsm'
+removed '/usr/local/var/postgres/base/12636/2600_vm'
+removed '/usr/local/var/postgres/base/12636/2601'
+removed '/usr/local/var/postgres/base/12636/2601_fsm'
+removed '/usr/local/var/postgres/base/12636/2601_vm'
+removed '/usr/local/var/postgres/base/12636/2602'
+removed '/usr/local/var/postgres/base/12636/2602_fsm'
+removed '/usr/local/var/postgres/base/12636/2602_vm'
+removed '/usr/local/var/postgres/base/12636/2603'
+removed '/usr/local/var/postgres/base/12636/2603_fsm'
+removed '/usr/local/var/postgres/base/12636/2603_vm'
+removed '/usr/local/var/postgres/base/12636/2604'
+removed '/usr/local/var/postgres/base/12636/2604_vm'
+removed '/usr/local/var/postgres/base/12636/2605'
+removed '/usr/local/var/postgres/base/12636/2605_fsm'
+removed '/usr/local/var/postgres/base/12636/2605_vm'
+removed '/usr/local/var/postgres/base/12636/2606'
+removed '/usr/local/var/postgres/base/12636/2606_fsm'
+removed '/usr/local/var/postgres/base/12636/2606_vm'
+removed '/usr/local/var/postgres/base/12636/2607'
+removed '/usr/local/var/postgres/base/12636/2607_fsm'
+removed '/usr/local/var/postgres/base/12636/2607_vm'
+removed '/usr/local/var/postgres/base/12636/2608'
+removed '/usr/local/var/postgres/base/12636/2608_fsm'
+removed '/usr/local/var/postgres/base/12636/2608_vm'
+removed '/usr/local/var/postgres/base/12636/2609'
+removed '/usr/local/var/postgres/base/12636/2609_fsm'
+removed '/usr/local/var/postgres/base/12636/2609_vm'
+removed '/usr/local/var/postgres/base/12636/2610'
+removed '/usr/local/var/postgres/base/12636/2610_fsm'
+removed '/usr/local/var/postgres/base/12636/2610_vm'
+removed '/usr/local/var/postgres/base/12636/2611'
+removed '/usr/local/var/postgres/base/12636/2611_vm'
+removed '/usr/local/var/postgres/base/12636/2612'
+removed '/usr/local/var/postgres/base/12636/2612_fsm'
+removed '/usr/local/var/postgres/base/12636/2612_vm'
+removed '/usr/local/var/postgres/base/12636/2613'
+removed '/usr/local/var/postgres/base/12636/2613_vm'
+removed '/usr/local/var/postgres/base/12636/2615'
+removed '/usr/local/var/postgres/base/12636/2615_fsm'
+removed '/usr/local/var/postgres/base/12636/2615_vm'
+removed '/usr/local/var/postgres/base/12636/2616'
+removed '/usr/local/var/postgres/base/12636/2616_fsm'
+removed '/usr/local/var/postgres/base/12636/2616_vm'
+removed '/usr/local/var/postgres/base/12636/2617'
+removed '/usr/local/var/postgres/base/12636/2617_fsm'
+removed '/usr/local/var/postgres/base/12636/2617_vm'
+removed '/usr/local/var/postgres/base/12636/2618'
+removed '/usr/local/var/postgres/base/12636/2618_fsm'
+removed '/usr/local/var/postgres/base/12636/2618_vm'
+removed '/usr/local/var/postgres/base/12636/2619'
+removed '/usr/local/var/postgres/base/12636/2619_fsm'
+removed '/usr/local/var/postgres/base/12636/2619_vm'
+removed '/usr/local/var/postgres/base/12636/2620'
+removed '/usr/local/var/postgres/base/12636/2620_vm'
+removed '/usr/local/var/postgres/base/12636/2650'
+removed '/usr/local/var/postgres/base/12636/2651'
+removed '/usr/local/var/postgres/base/12636/2652'
+removed '/usr/local/var/postgres/base/12636/2653'
+removed '/usr/local/var/postgres/base/12636/2654'
+removed '/usr/local/var/postgres/base/12636/2655'
+removed '/usr/local/var/postgres/base/12636/2656'
+removed '/usr/local/var/postgres/base/12636/2657'
+removed '/usr/local/var/postgres/base/12636/2658'
+removed '/usr/local/var/postgres/base/12636/2659'
+removed '/usr/local/var/postgres/base/12636/2660'
+removed '/usr/local/var/postgres/base/12636/2661'
+removed '/usr/local/var/postgres/base/12636/2662'
+removed '/usr/local/var/postgres/base/12636/2663'
+removed '/usr/local/var/postgres/base/12636/2664'
+removed '/usr/local/var/postgres/base/12636/2665'
+removed '/usr/local/var/postgres/base/12636/2666'
+removed '/usr/local/var/postgres/base/12636/2667'
+removed '/usr/local/var/postgres/base/12636/2668'
+removed '/usr/local/var/postgres/base/12636/2669'
+removed '/usr/local/var/postgres/base/12636/2670'
+removed '/usr/local/var/postgres/base/12636/2673'
+removed '/usr/local/var/postgres/base/12636/2674'
+removed '/usr/local/var/postgres/base/12636/2675'
+removed '/usr/local/var/postgres/base/12636/2678'
+removed '/usr/local/var/postgres/base/12636/2679'
+removed '/usr/local/var/postgres/base/12636/2680'
+removed '/usr/local/var/postgres/base/12636/2681'
+removed '/usr/local/var/postgres/base/12636/2682'
+removed '/usr/local/var/postgres/base/12636/2683'
+removed '/usr/local/var/postgres/base/12636/2684'
+removed '/usr/local/var/postgres/base/12636/2685'
+removed '/usr/local/var/postgres/base/12636/2686'
+removed '/usr/local/var/postgres/base/12636/2687'
+removed '/usr/local/var/postgres/base/12636/2688'
+removed '/usr/local/var/postgres/base/12636/2689'
+removed '/usr/local/var/postgres/base/12636/2690'
+removed '/usr/local/var/postgres/base/12636/2691'
+removed '/usr/local/var/postgres/base/12636/2692'
+removed '/usr/local/var/postgres/base/12636/2693'
+removed '/usr/local/var/postgres/base/12636/2696'
+removed '/usr/local/var/postgres/base/12636/2699'
+removed '/usr/local/var/postgres/base/12636/2701'
+removed '/usr/local/var/postgres/base/12636/2702'
+removed '/usr/local/var/postgres/base/12636/2703'
+removed '/usr/local/var/postgres/base/12636/2704'
+removed '/usr/local/var/postgres/base/12636/2753'
+removed '/usr/local/var/postgres/base/12636/2753_fsm'
+removed '/usr/local/var/postgres/base/12636/2753_vm'
+removed '/usr/local/var/postgres/base/12636/2754'
+removed '/usr/local/var/postgres/base/12636/2755'
+removed '/usr/local/var/postgres/base/12636/2756'
+removed '/usr/local/var/postgres/base/12636/2757'
+removed '/usr/local/var/postgres/base/12636/2830'
+removed '/usr/local/var/postgres/base/12636/2830_vm'
+removed '/usr/local/var/postgres/base/12636/2831'
+removed '/usr/local/var/postgres/base/12636/2832'
+removed '/usr/local/var/postgres/base/12636/2832_vm'
+removed '/usr/local/var/postgres/base/12636/2833'
+removed '/usr/local/var/postgres/base/12636/2834'
+removed '/usr/local/var/postgres/base/12636/2834_vm'
+removed '/usr/local/var/postgres/base/12636/2835'
+removed '/usr/local/var/postgres/base/12636/2836'
+removed '/usr/local/var/postgres/base/12636/2836_vm'
+removed '/usr/local/var/postgres/base/12636/2837'
+removed '/usr/local/var/postgres/base/12636/2838'
+removed '/usr/local/var/postgres/base/12636/2838_fsm'
+removed '/usr/local/var/postgres/base/12636/2838_vm'
+removed '/usr/local/var/postgres/base/12636/2839'
+removed '/usr/local/var/postgres/base/12636/2840'
+removed '/usr/local/var/postgres/base/12636/2840_fsm'
+removed '/usr/local/var/postgres/base/12636/2840_vm'
+removed '/usr/local/var/postgres/base/12636/2841'
+removed '/usr/local/var/postgres/base/12636/2995'
+removed '/usr/local/var/postgres/base/12636/2995_vm'
+removed '/usr/local/var/postgres/base/12636/2996'
+removed '/usr/local/var/postgres/base/12636/3079'
+removed '/usr/local/var/postgres/base/12636/3079_fsm'
+removed '/usr/local/var/postgres/base/12636/3079_vm'
+removed '/usr/local/var/postgres/base/12636/3080'
+removed '/usr/local/var/postgres/base/12636/3081'
+removed '/usr/local/var/postgres/base/12636/3085'
+removed '/usr/local/var/postgres/base/12636/3118'
+removed '/usr/local/var/postgres/base/12636/3118_vm'
+removed '/usr/local/var/postgres/base/12636/3119'
+removed '/usr/local/var/postgres/base/12636/3164'
+removed '/usr/local/var/postgres/base/12636/3256'
+removed '/usr/local/var/postgres/base/12636/3256_vm'
+removed '/usr/local/var/postgres/base/12636/3257'
+removed '/usr/local/var/postgres/base/12636/3258'
+removed '/usr/local/var/postgres/base/12636/3455'
+removed '/usr/local/var/postgres/base/12636/3456'
+removed '/usr/local/var/postgres/base/12636/3456_fsm'
+removed '/usr/local/var/postgres/base/12636/3456_vm'
+removed '/usr/local/var/postgres/base/12636/3466'
+removed '/usr/local/var/postgres/base/12636/3466_vm'
+removed '/usr/local/var/postgres/base/12636/3467'
+removed '/usr/local/var/postgres/base/12636/3468'
+removed '/usr/local/var/postgres/base/12636/3501'
+removed '/usr/local/var/postgres/base/12636/3501_vm'
+removed '/usr/local/var/postgres/base/12636/3502'
+removed '/usr/local/var/postgres/base/12636/3503'
+removed '/usr/local/var/postgres/base/12636/3534'
+removed '/usr/local/var/postgres/base/12636/3541'
+removed '/usr/local/var/postgres/base/12636/3541_fsm'
+removed '/usr/local/var/postgres/base/12636/3541_vm'
+removed '/usr/local/var/postgres/base/12636/3542'
+removed '/usr/local/var/postgres/base/12636/3574'
+removed '/usr/local/var/postgres/base/12636/3575'
+removed '/usr/local/var/postgres/base/12636/3576'
+removed '/usr/local/var/postgres/base/12636/3576_vm'
+removed '/usr/local/var/postgres/base/12636/3596'
+removed '/usr/local/var/postgres/base/12636/3596_vm'
+removed '/usr/local/var/postgres/base/12636/3597'
+removed '/usr/local/var/postgres/base/12636/3598'
+removed '/usr/local/var/postgres/base/12636/3598_vm'
+removed '/usr/local/var/postgres/base/12636/3599'
+removed '/usr/local/var/postgres/base/12636/3600'
+removed '/usr/local/var/postgres/base/12636/3600_fsm'
+removed '/usr/local/var/postgres/base/12636/3600_vm'
+removed '/usr/local/var/postgres/base/12636/3601'
+removed '/usr/local/var/postgres/base/12636/3601_fsm'
+removed '/usr/local/var/postgres/base/12636/3601_vm'
+removed '/usr/local/var/postgres/base/12636/3602'
+removed '/usr/local/var/postgres/base/12636/3602_fsm'
+removed '/usr/local/var/postgres/base/12636/3602_vm'
+removed '/usr/local/var/postgres/base/12636/3603'
+removed '/usr/local/var/postgres/base/12636/3603_fsm'
+removed '/usr/local/var/postgres/base/12636/3603_vm'
+removed '/usr/local/var/postgres/base/12636/3604'
+removed '/usr/local/var/postgres/base/12636/3605'
+removed '/usr/local/var/postgres/base/12636/3606'
+removed '/usr/local/var/postgres/base/12636/3607'
+removed '/usr/local/var/postgres/base/12636/3608'
+removed '/usr/local/var/postgres/base/12636/3609'
+removed '/usr/local/var/postgres/base/12636/3712'
+removed '/usr/local/var/postgres/base/12636/3764'
+removed '/usr/local/var/postgres/base/12636/3764_fsm'
+removed '/usr/local/var/postgres/base/12636/3764_vm'
+removed '/usr/local/var/postgres/base/12636/3766'
+removed '/usr/local/var/postgres/base/12636/3767'
+removed '/usr/local/var/postgres/base/12636/548'
+removed '/usr/local/var/postgres/base/12636/549'
+removed '/usr/local/var/postgres/base/12636/826'
+removed '/usr/local/var/postgres/base/12636/826_vm'
+removed '/usr/local/var/postgres/base/12636/827'
+removed '/usr/local/var/postgres/base/12636/828'
+removed '/usr/local/var/postgres/base/12636/pg_filenode.map'
+removed '/usr/local/var/postgres/base/12636/PG_VERSION'
+removed directory '/usr/local/var/postgres/base/12636'
+removed '/usr/local/var/postgres/base/12641/112'
+removed '/usr/local/var/postgres/base/12641/113'
+removed '/usr/local/var/postgres/base/12641/1247'
+removed '/usr/local/var/postgres/base/12641/12472'
+removed '/usr/local/var/postgres/base/12641/12472_fsm'
+removed '/usr/local/var/postgres/base/12641/12472_vm'
+removed '/usr/local/var/postgres/base/12641/12474'
+removed '/usr/local/var/postgres/base/12641/12476'
+removed '/usr/local/var/postgres/base/12641/12477'
+removed '/usr/local/var/postgres/base/12641/12477_fsm'
+removed '/usr/local/var/postgres/base/12641/12477_vm'
+removed '/usr/local/var/postgres/base/12641/12479'
+removed '/usr/local/var/postgres/base/12641/1247_fsm'
+removed '/usr/local/var/postgres/base/12641/1247_vm'
+removed '/usr/local/var/postgres/base/12641/12481'
+removed '/usr/local/var/postgres/base/12641/12482'
+removed '/usr/local/var/postgres/base/12641/12482_fsm'
+removed '/usr/local/var/postgres/base/12641/12482_vm'
+removed '/usr/local/var/postgres/base/12641/12484'
+removed '/usr/local/var/postgres/base/12641/12486'
+removed '/usr/local/var/postgres/base/12641/12487'
+removed '/usr/local/var/postgres/base/12641/12487_fsm'
+removed '/usr/local/var/postgres/base/12641/12487_vm'
+removed '/usr/local/var/postgres/base/12641/12489'
+removed '/usr/local/var/postgres/base/12641/1249'
+removed '/usr/local/var/postgres/base/12641/12491'
+removed '/usr/local/var/postgres/base/12641/12492'
+removed '/usr/local/var/postgres/base/12641/12492_fsm'
+removed '/usr/local/var/postgres/base/12641/12492_vm'
+removed '/usr/local/var/postgres/base/12641/12494'
+removed '/usr/local/var/postgres/base/12641/12496'
+removed '/usr/local/var/postgres/base/12641/12497'
+removed '/usr/local/var/postgres/base/12641/12497_fsm'
+removed '/usr/local/var/postgres/base/12641/12497_vm'
+removed '/usr/local/var/postgres/base/12641/12499'
+removed '/usr/local/var/postgres/base/12641/1249_fsm'
+removed '/usr/local/var/postgres/base/12641/1249_vm'
+removed '/usr/local/var/postgres/base/12641/12501'
+removed '/usr/local/var/postgres/base/12641/12502'
+removed '/usr/local/var/postgres/base/12641/12504'
+removed '/usr/local/var/postgres/base/12641/12506'
+removed '/usr/local/var/postgres/base/12641/1255'
+removed '/usr/local/var/postgres/base/12641/1255_fsm'
+removed '/usr/local/var/postgres/base/12641/1255_vm'
+removed '/usr/local/var/postgres/base/12641/1259'
+removed '/usr/local/var/postgres/base/12641/1259_fsm'
+removed '/usr/local/var/postgres/base/12641/1259_vm'
+removed '/usr/local/var/postgres/base/12641/1417'
+removed '/usr/local/var/postgres/base/12641/1417_vm'
+removed '/usr/local/var/postgres/base/12641/1418'
+removed '/usr/local/var/postgres/base/12641/1418_vm'
+removed '/usr/local/var/postgres/base/12641/174'
+removed '/usr/local/var/postgres/base/12641/175'
+removed '/usr/local/var/postgres/base/12641/2187'
+removed '/usr/local/var/postgres/base/12641/2328'
+removed '/usr/local/var/postgres/base/12641/2328_vm'
+removed '/usr/local/var/postgres/base/12641/2336'
+removed '/usr/local/var/postgres/base/12641/2336_vm'
+removed '/usr/local/var/postgres/base/12641/2337'
+removed '/usr/local/var/postgres/base/12641/2600'
+removed '/usr/local/var/postgres/base/12641/2600_fsm'
+removed '/usr/local/var/postgres/base/12641/2600_vm'
+removed '/usr/local/var/postgres/base/12641/2601'
+removed '/usr/local/var/postgres/base/12641/2601_fsm'
+removed '/usr/local/var/postgres/base/12641/2601_vm'
+removed '/usr/local/var/postgres/base/12641/2602'
+removed '/usr/local/var/postgres/base/12641/2602_fsm'
+removed '/usr/local/var/postgres/base/12641/2602_vm'
+removed '/usr/local/var/postgres/base/12641/2603'
+removed '/usr/local/var/postgres/base/12641/2603_fsm'
+removed '/usr/local/var/postgres/base/12641/2603_vm'
+removed '/usr/local/var/postgres/base/12641/2604'
+removed '/usr/local/var/postgres/base/12641/2604_vm'
+removed '/usr/local/var/postgres/base/12641/2605'
+removed '/usr/local/var/postgres/base/12641/2605_fsm'
+removed '/usr/local/var/postgres/base/12641/2605_vm'
+removed '/usr/local/var/postgres/base/12641/2606'
+removed '/usr/local/var/postgres/base/12641/2606_fsm'
+removed '/usr/local/var/postgres/base/12641/2606_vm'
+removed '/usr/local/var/postgres/base/12641/2607'
+removed '/usr/local/var/postgres/base/12641/2607_fsm'
+removed '/usr/local/var/postgres/base/12641/2607_vm'
+removed '/usr/local/var/postgres/base/12641/2608'
+removed '/usr/local/var/postgres/base/12641/2608_fsm'
+removed '/usr/local/var/postgres/base/12641/2608_vm'
+removed '/usr/local/var/postgres/base/12641/2609'
+removed '/usr/local/var/postgres/base/12641/2609_fsm'
+removed '/usr/local/var/postgres/base/12641/2609_vm'
+removed '/usr/local/var/postgres/base/12641/2610'
+removed '/usr/local/var/postgres/base/12641/2610_fsm'
+removed '/usr/local/var/postgres/base/12641/2610_vm'
+removed '/usr/local/var/postgres/base/12641/2611'
+removed '/usr/local/var/postgres/base/12641/2611_vm'
+removed '/usr/local/var/postgres/base/12641/2612'
+removed '/usr/local/var/postgres/base/12641/2612_fsm'
+removed '/usr/local/var/postgres/base/12641/2612_vm'
+removed '/usr/local/var/postgres/base/12641/2613'
+removed '/usr/local/var/postgres/base/12641/2613_vm'
+removed '/usr/local/var/postgres/base/12641/2615'
+removed '/usr/local/var/postgres/base/12641/2615_fsm'
+removed '/usr/local/var/postgres/base/12641/2615_vm'
+removed '/usr/local/var/postgres/base/12641/2616'
+removed '/usr/local/var/postgres/base/12641/2616_fsm'
+removed '/usr/local/var/postgres/base/12641/2616_vm'
+removed '/usr/local/var/postgres/base/12641/2617'
+removed '/usr/local/var/postgres/base/12641/2617_fsm'
+removed '/usr/local/var/postgres/base/12641/2617_vm'
+removed '/usr/local/var/postgres/base/12641/2618'
+removed '/usr/local/var/postgres/base/12641/2618_fsm'
+removed '/usr/local/var/postgres/base/12641/2618_vm'
+removed '/usr/local/var/postgres/base/12641/2619'
+removed '/usr/local/var/postgres/base/12641/2619_fsm'
+removed '/usr/local/var/postgres/base/12641/2619_vm'
+removed '/usr/local/var/postgres/base/12641/2620'
+removed '/usr/local/var/postgres/base/12641/2620_vm'
+removed '/usr/local/var/postgres/base/12641/2650'
+removed '/usr/local/var/postgres/base/12641/2651'
+removed '/usr/local/var/postgres/base/12641/2652'
+removed '/usr/local/var/postgres/base/12641/2653'
+removed '/usr/local/var/postgres/base/12641/2654'
+removed '/usr/local/var/postgres/base/12641/2655'
+removed '/usr/local/var/postgres/base/12641/2656'
+removed '/usr/local/var/postgres/base/12641/2657'
+removed '/usr/local/var/postgres/base/12641/2658'
+removed '/usr/local/var/postgres/base/12641/2659'
+removed '/usr/local/var/postgres/base/12641/2660'
+removed '/usr/local/var/postgres/base/12641/2661'
+removed '/usr/local/var/postgres/base/12641/2662'
+removed '/usr/local/var/postgres/base/12641/2663'
+removed '/usr/local/var/postgres/base/12641/2664'
+removed '/usr/local/var/postgres/base/12641/2665'
+removed '/usr/local/var/postgres/base/12641/2666'
+removed '/usr/local/var/postgres/base/12641/2667'
+removed '/usr/local/var/postgres/base/12641/2668'
+removed '/usr/local/var/postgres/base/12641/2669'
+removed '/usr/local/var/postgres/base/12641/2670'
+removed '/usr/local/var/postgres/base/12641/2673'
+removed '/usr/local/var/postgres/base/12641/2674'
+removed '/usr/local/var/postgres/base/12641/2675'
+removed '/usr/local/var/postgres/base/12641/2678'
+removed '/usr/local/var/postgres/base/12641/2679'
+removed '/usr/local/var/postgres/base/12641/2680'
+removed '/usr/local/var/postgres/base/12641/2681'
+removed '/usr/local/var/postgres/base/12641/2682'
+removed '/usr/local/var/postgres/base/12641/2683'
+removed '/usr/local/var/postgres/base/12641/2684'
+removed '/usr/local/var/postgres/base/12641/2685'
+removed '/usr/local/var/postgres/base/12641/2686'
+removed '/usr/local/var/postgres/base/12641/2687'
+removed '/usr/local/var/postgres/base/12641/2688'
+removed '/usr/local/var/postgres/base/12641/2689'
+removed '/usr/local/var/postgres/base/12641/2690'
+removed '/usr/local/var/postgres/base/12641/2691'
+removed '/usr/local/var/postgres/base/12641/2692'
+removed '/usr/local/var/postgres/base/12641/2693'
+removed '/usr/local/var/postgres/base/12641/2696'
+removed '/usr/local/var/postgres/base/12641/2699'
+removed '/usr/local/var/postgres/base/12641/2701'
+removed '/usr/local/var/postgres/base/12641/2702'
+removed '/usr/local/var/postgres/base/12641/2703'
+removed '/usr/local/var/postgres/base/12641/2704'
+removed '/usr/local/var/postgres/base/12641/2753'
+removed '/usr/local/var/postgres/base/12641/2753_fsm'
+removed '/usr/local/var/postgres/base/12641/2753_vm'
+removed '/usr/local/var/postgres/base/12641/2754'
+removed '/usr/local/var/postgres/base/12641/2755'
+removed '/usr/local/var/postgres/base/12641/2756'
+removed '/usr/local/var/postgres/base/12641/2757'
+removed '/usr/local/var/postgres/base/12641/2830'
+removed '/usr/local/var/postgres/base/12641/2830_vm'
+removed '/usr/local/var/postgres/base/12641/2831'
+removed '/usr/local/var/postgres/base/12641/2832'
+removed '/usr/local/var/postgres/base/12641/2832_vm'
+removed '/usr/local/var/postgres/base/12641/2833'
+removed '/usr/local/var/postgres/base/12641/2834'
+removed '/usr/local/var/postgres/base/12641/2834_vm'
+removed '/usr/local/var/postgres/base/12641/2835'
+removed '/usr/local/var/postgres/base/12641/2836'
+removed '/usr/local/var/postgres/base/12641/2836_vm'
+removed '/usr/local/var/postgres/base/12641/2837'
+removed '/usr/local/var/postgres/base/12641/2838'
+removed '/usr/local/var/postgres/base/12641/2838_fsm'
+removed '/usr/local/var/postgres/base/12641/2838_vm'
+removed '/usr/local/var/postgres/base/12641/2839'
+removed '/usr/local/var/postgres/base/12641/2840'
+removed '/usr/local/var/postgres/base/12641/2840_fsm'
+removed '/usr/local/var/postgres/base/12641/2840_vm'
+removed '/usr/local/var/postgres/base/12641/2841'
+removed '/usr/local/var/postgres/base/12641/2995'
+removed '/usr/local/var/postgres/base/12641/2995_vm'
+removed '/usr/local/var/postgres/base/12641/2996'
+removed '/usr/local/var/postgres/base/12641/3079'
+removed '/usr/local/var/postgres/base/12641/3079_fsm'
+removed '/usr/local/var/postgres/base/12641/3079_vm'
+removed '/usr/local/var/postgres/base/12641/3080'
+removed '/usr/local/var/postgres/base/12641/3081'
+removed '/usr/local/var/postgres/base/12641/3085'
+removed '/usr/local/var/postgres/base/12641/3118'
+removed '/usr/local/var/postgres/base/12641/3118_vm'
+removed '/usr/local/var/postgres/base/12641/3119'
+removed '/usr/local/var/postgres/base/12641/3164'
+removed '/usr/local/var/postgres/base/12641/3256'
+removed '/usr/local/var/postgres/base/12641/3256_vm'
+removed '/usr/local/var/postgres/base/12641/3257'
+removed '/usr/local/var/postgres/base/12641/3258'
+removed '/usr/local/var/postgres/base/12641/3455'
+removed '/usr/local/var/postgres/base/12641/3456'
+removed '/usr/local/var/postgres/base/12641/3456_fsm'
+removed '/usr/local/var/postgres/base/12641/3456_vm'
+removed '/usr/local/var/postgres/base/12641/3466'
+removed '/usr/local/var/postgres/base/12641/3466_vm'
+removed '/usr/local/var/postgres/base/12641/3467'
+removed '/usr/local/var/postgres/base/12641/3468'
+removed '/usr/local/var/postgres/base/12641/3501'
+removed '/usr/local/var/postgres/base/12641/3501_vm'
+removed '/usr/local/var/postgres/base/12641/3502'
+removed '/usr/local/var/postgres/base/12641/3503'
+removed '/usr/local/var/postgres/base/12641/3534'
+removed '/usr/local/var/postgres/base/12641/3541'
+removed '/usr/local/var/postgres/base/12641/3541_fsm'
+removed '/usr/local/var/postgres/base/12641/3541_vm'
+removed '/usr/local/var/postgres/base/12641/3542'
+removed '/usr/local/var/postgres/base/12641/3574'
+removed '/usr/local/var/postgres/base/12641/3575'
+removed '/usr/local/var/postgres/base/12641/3576'
+removed '/usr/local/var/postgres/base/12641/3576_vm'
+removed '/usr/local/var/postgres/base/12641/3596'
+removed '/usr/local/var/postgres/base/12641/3596_vm'
+removed '/usr/local/var/postgres/base/12641/3597'
+removed '/usr/local/var/postgres/base/12641/3598'
+removed '/usr/local/var/postgres/base/12641/3598_vm'
+removed '/usr/local/var/postgres/base/12641/3599'
+removed '/usr/local/var/postgres/base/12641/3600'
+removed '/usr/local/var/postgres/base/12641/3600_fsm'
+removed '/usr/local/var/postgres/base/12641/3600_vm'
+removed '/usr/local/var/postgres/base/12641/3601'
+removed '/usr/local/var/postgres/base/12641/3601_fsm'
+removed '/usr/local/var/postgres/base/12641/3601_vm'
+removed '/usr/local/var/postgres/base/12641/3602'
+removed '/usr/local/var/postgres/base/12641/3602_fsm'
+removed '/usr/local/var/postgres/base/12641/3602_vm'
+removed '/usr/local/var/postgres/base/12641/3603'
+removed '/usr/local/var/postgres/base/12641/3603_fsm'
+removed '/usr/local/var/postgres/base/12641/3603_vm'
+removed '/usr/local/var/postgres/base/12641/3604'
+removed '/usr/local/var/postgres/base/12641/3605'
+removed '/usr/local/var/postgres/base/12641/3606'
+removed '/usr/local/var/postgres/base/12641/3607'
+removed '/usr/local/var/postgres/base/12641/3608'
+removed '/usr/local/var/postgres/base/12641/3609'
+removed '/usr/local/var/postgres/base/12641/3712'
+removed '/usr/local/var/postgres/base/12641/3764'
+removed '/usr/local/var/postgres/base/12641/3764_fsm'
+removed '/usr/local/var/postgres/base/12641/3764_vm'
+removed '/usr/local/var/postgres/base/12641/3766'
+removed '/usr/local/var/postgres/base/12641/3767'
+removed '/usr/local/var/postgres/base/12641/548'
+removed '/usr/local/var/postgres/base/12641/549'
+removed '/usr/local/var/postgres/base/12641/826'
+removed '/usr/local/var/postgres/base/12641/826_vm'
+removed '/usr/local/var/postgres/base/12641/827'
+removed '/usr/local/var/postgres/base/12641/828'
+removed '/usr/local/var/postgres/base/12641/pg_filenode.map'
+removed '/usr/local/var/postgres/base/12641/PG_VERSION'
+removed directory '/usr/local/var/postgres/base/12641'
+removed directory '/usr/local/var/postgres/base'
+removed '/usr/local/var/postgres/global/1136'
+removed '/usr/local/var/postgres/global/1136_fsm'
+removed '/usr/local/var/postgres/global/1136_vm'
+removed '/usr/local/var/postgres/global/1137'
+removed '/usr/local/var/postgres/global/1213'
+removed '/usr/local/var/postgres/global/1213_fsm'
+removed '/usr/local/var/postgres/global/1213_vm'
+removed '/usr/local/var/postgres/global/1214'
+removed '/usr/local/var/postgres/global/1214_fsm'
+removed '/usr/local/var/postgres/global/1214_vm'
+removed '/usr/local/var/postgres/global/1232'
+removed '/usr/local/var/postgres/global/1233'
+removed '/usr/local/var/postgres/global/1260'
+removed '/usr/local/var/postgres/global/1260_fsm'
+removed '/usr/local/var/postgres/global/1260_vm'
+removed '/usr/local/var/postgres/global/1261'
+removed '/usr/local/var/postgres/global/1261_vm'
+removed '/usr/local/var/postgres/global/12637'
+removed '/usr/local/var/postgres/global/12639'
+removed '/usr/local/var/postgres/global/12640'
+removed '/usr/local/var/postgres/global/2396'
+removed '/usr/local/var/postgres/global/2396_fsm'
+removed '/usr/local/var/postgres/global/2396_vm'
+removed '/usr/local/var/postgres/global/2397'
+removed '/usr/local/var/postgres/global/2676'
+removed '/usr/local/var/postgres/global/2677'
+removed '/usr/local/var/postgres/global/2694'
+removed '/usr/local/var/postgres/global/2695'
+removed '/usr/local/var/postgres/global/2697'
+removed '/usr/local/var/postgres/global/2698'
+removed '/usr/local/var/postgres/global/2846'
+removed '/usr/local/var/postgres/global/2846_vm'
+removed '/usr/local/var/postgres/global/2847'
+removed '/usr/local/var/postgres/global/2964'
+removed '/usr/local/var/postgres/global/2964_vm'
+removed '/usr/local/var/postgres/global/2965'
+removed '/usr/local/var/postgres/global/2966'
+removed '/usr/local/var/postgres/global/2966_vm'
+removed '/usr/local/var/postgres/global/2967'
+removed '/usr/local/var/postgres/global/3592'
+removed '/usr/local/var/postgres/global/3592_vm'
+removed '/usr/local/var/postgres/global/3593'
+removed '/usr/local/var/postgres/global/4060'
+removed '/usr/local/var/postgres/global/4060_vm'
+removed '/usr/local/var/postgres/global/4061'
+removed '/usr/local/var/postgres/global/6000'
+removed '/usr/local/var/postgres/global/6000_vm'
+removed '/usr/local/var/postgres/global/6001'
+removed '/usr/local/var/postgres/global/6002'
+removed '/usr/local/var/postgres/global/pg_control'
+removed '/usr/local/var/postgres/global/pg_filenode.map'
+removed directory '/usr/local/var/postgres/global'
+removed '/usr/local/var/postgres/pg_clog/0000'
+removed directory '/usr/local/var/postgres/pg_clog'
+removed directory '/usr/local/var/postgres/pg_commit_ts'
+removed directory '/usr/local/var/postgres/pg_dynshmem'
+removed '/usr/local/var/postgres/pg_hba.conf'
+removed '/usr/local/var/postgres/pg_ident.conf'
+removed directory '/usr/local/var/postgres/pg_logical/mappings'
+removed directory '/usr/local/var/postgres/pg_logical/snapshots'
+removed directory '/usr/local/var/postgres/pg_logical'
+removed '/usr/local/var/postgres/pg_multixact/members/0000'
+removed directory '/usr/local/var/postgres/pg_multixact/members'
+removed '/usr/local/var/postgres/pg_multixact/offsets/0000'
+removed directory '/usr/local/var/postgres/pg_multixact/offsets'
+removed directory '/usr/local/var/postgres/pg_multixact'
+removed '/usr/local/var/postgres/pg_notify/0000'
+removed directory '/usr/local/var/postgres/pg_notify'
+removed directory '/usr/local/var/postgres/pg_replslot'
+removed directory '/usr/local/var/postgres/pg_serial'
+removed directory '/usr/local/var/postgres/pg_snapshots'
+removed directory '/usr/local/var/postgres/pg_stat'
+removed '/usr/local/var/postgres/pg_stat_tmp/global.stat'
+removed directory '/usr/local/var/postgres/pg_stat_tmp'
+removed '/usr/local/var/postgres/pg_subtrans/0000'
+removed directory '/usr/local/var/postgres/pg_subtrans'
+removed directory '/usr/local/var/postgres/pg_tblspc'
+removed directory '/usr/local/var/postgres/pg_twophase'
+removed '/usr/local/var/postgres/PG_VERSION'
+removed '/usr/local/var/postgres/pg_xlog/000000010000000000000001'
+removed directory '/usr/local/var/postgres/pg_xlog/archive_status'
+removed directory '/usr/local/var/postgres/pg_xlog'
+removed '/usr/local/var/postgres/postgresql.auto.conf'
+removed '/usr/local/var/postgres/postgresql.conf'
+removed '/usr/local/var/postgres/postmaster.opts'
+removed '/usr/local/var/postgres/postmaster.pid'
+removed directory '/usr/local/var/postgres'
+jayanzaman ~
+$ ps aux | grep postgres
+jayanzaman         775   0.1  0.0  2650128    976   ??  Ss   25Oct16   0:08.62 postgres: autovacuum launcher process
+jayanzaman         776   0.0  0.0  2505112    424   ??  Ss   25Oct16   0:12.29 postgres: stats collector process
+jayanzaman         774   0.0  0.0  2650128    100   ??  Ss   25Oct16   0:12.12 postgres: wal writer process
+jayanzaman         773   0.0  0.0  2641936    152   ??  Ss   25Oct16   0:11.01 postgres: writer process
+jayanzaman         772   0.0  0.0  2641936    156   ??  Ss   25Oct16   0:00.41 postgres: checkpointer process
+jayanzaman         756   0.0  0.0  2642192    412   ??  S    25Oct16   0:03.24 /usr/local/opt/postgresql/bin/postgres -D /usr/local/var/postgres
+jayanzaman       41566   0.0  0.0  2432804    872 s001  S+    1:51PM   0:00.00 grep postgres
+jayanzaman ~
+$ sudo kill 756
+Password:
+Sorry, try again.
+Password:
+Sorry, try again.
+Password:
+sudo: 3 incorrect password attempts
+jayanzaman ~
+$ kill 756
+-bash: kill: (756) - No such process
+jayanzaman ~
+$ ps aux | grep postgres
+jayanzaman       41590   0.0  0.0  2432804    872 s001  S+    1:51PM   0:00.00 grep postgres
+jayanzaman ~
+$ brew install postgres
+==> Auto-updated Homebrew!
+Updated 1 tap (homebrew/core).
+==> Updated Formulae
+android-ndk           awscli                docker                hyperscan             libressl              meson                 msmtp                 syncthing             yarn
+arangodb              cassandra             gradle                libcec                llnode                mpop                  svtplay-dl            x264
+
+Error: Could not link:
+/usr/local/share/doc/homebrew
+
+Please delete these paths and run `brew update`.
+Error: postgresql-9.5.4_1 already installed
+To install this version, first `brew unlink postgresql`
+jayanzaman ~
+$ brew update
+Updated 1 tap (caskroom/cask).
+Error: Could not link:
+/usr/local/share/doc/homebrew
+
+Please delete these paths and run `brew update`.
+jayanzaman ~
+$ brew uninstall postgres
+Uninstalling /usr/local/Cellar/postgresql/9.5.4_1... (3,147 files, 35M)
+jayanzaman ~
+$ brew install postgres
+==> Downloading https://homebrew.bintray.com/bottles/postgresql-9.5.5.sierra.bottle.tar.gz
+######################################################################## 100.0%
+==> Pouring postgresql-9.5.5.sierra.bottle.tar.gz
+==> Using the sandbox
+==> /usr/local/Cellar/postgresql/9.5.5/bin/initdb /usr/local/var/postgres
+==> Caveats
+If builds of PostgreSQL 9 are failing and you have version 8.x installed,
+you may need to remove the previous version first. See:
+  https://github.com/Homebrew/homebrew/issues/2510
+
+To migrate existing data from a previous major version (pre-9.0) of PostgreSQL, see:
+  https://www.postgresql.org/docs/9.5/static/upgrading.html
+
+To migrate existing data from a previous minor version (9.0-9.4) of PostgreSQL, see:
+  https://www.postgresql.org/docs/9.5/static/pgupgrade.html
+
+  You will need your previous PostgreSQL installation from brew to perform `pg_upgrade`.
+  Do not run `brew cleanup postgresql` until you have performed the migration.
+
+To have launchd start postgresql now and restart at login:
+  brew services start postgresql
+Or, if you don't want/need a background service you can just run:
+  pg_ctl -D /usr/local/var/postgres start
+==> Summary
+🍺  /usr/local/Cellar/postgresql/9.5.5: 3,154 files, 35.1M
+jayanzaman ~
+$ psql
+psql: FATAL:  database "jayanzaman" does not exist
+jayanzaman ~
+$ createuser jayanzaman
+createuser: creation of new role failed: ERROR:  role "jayanzaman" already exists
+jayanzaman ~
+$ psql
+psql: FATAL:  database "jayanzaman" does not exist
+jayanzaman ~
+$ createdb jayanzaman
+jayanzaman ~
+$ psql
+psql (9.5.5)
+Type "help" for help.
+
+jayanzaman=# psql
+jayanzaman-# ^C
+jayanzaman=# ^C
+jayanzaman=# /q
+jayanzaman-# \q
+jayanzaman ~
+$ ls
+Applications/  Desktop/  Documents/  Downloads/  Library/  Movies/  Music/  Pictures/  Public/  WDI-xfiles-scully/  code/
+jayanzaman ~
+$ cd documents
+jayanzaman ~/documents
+$ cd generalassembly
+jayanzaman ~/documents/generalassembly
+$ ls
+BitBucket/  CupcakeStand/  Outcomes/  PersonalWebsite/  Pre-Work/  Resources/  WDI-xfiles-scully/  test/  test2/  web_development_learning/
+jayanzaman ~/documents/generalassembly
+$ cd wdi-xfiles-scully
+jayanzaman ~/documents/generalassembly/wdi-xfiles-scully on master[!?]
+$ ls
+README.md  homework_submission_process.md  jquery.js  projects/  u1/  u2/  xfiles.jpg
+jayanzaman ~/documents/generalassembly/wdi-xfiles-scully on master[!?]
+$ git pull upstream master
+remote: Counting objects: 21, done.
+remote: Compressing objects: 100% (20/20), done.
+remote: Total 21 (delta 4), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (21/21), done.
+From github.com:ga-students/WDI-xfiles-scully
+ * branch            master     -> FETCH_HEAD
+   886e63f..4b0b25f  master     -> upstream/master
+Merge made by the 'recursive' strategy.
+ u2/d04/morning/data.js         |  4 ++--
+ u2/d04/psql-exercise/seeds.sql | 31 +++++++++++++++++++++++++++++++
+ 2 files changed, 33 insertions(+), 2 deletions(-)
+ create mode 100644 u2/d04/psql-exercise/seeds.sql
+jayanzaman ~/documents/generalassembly/wdi-xfiles-scully on master[!?]
+$ cd u2
+jayanzaman ~/documents/generalassembly/wdi-xfiles-scully/u2 on master[!?]
+$ ls
+d01/  d02/  d03/  d04/  jquery.js
+jayanzaman ~/documents/generalassembly/wdi-xfiles-scully/u2 on master[!?]
+$ cd d04
+jayanzaman ~/documents/generalassembly/wdi-xfiles-scully/u2/d04 on master[!]
+$ ls
+morning/  psql-exercise/
+jayanzaman ~/documents/generalassembly/wdi-xfiles-scully/u2/d04 on master[!]
+$ cd psql-exercise
+jayanzaman ~/documents/generalassembly/wdi-xfiles-scully/u2/d04/psql-exercise on master[!]
+$ ls
+seeds.sql
+jayanzaman ~/documents/generalassembly/wdi-xfiles-scully/u2/d04/psql-exercise on master[!]
+$ subl seeds.sql
+jayanzaman ~/documents/generalassembly/wdi-xfiles-scully/u2/d04/psql-exercise on master[!]
+$ psql
+psql (9.5.5)
+Type "help" for help.
+
+jayanzaman=# createdb
+jayanzaman-# createdb voters
+jayanzaman-# createdb seeds.sql
+jayanzaman-# /l
+jayanzaman-# \l
+                                     List of databases
+    Name    |   Owner    | Encoding |   Collate   |    Ctype    |     Access privileges
+------------+------------+----------+-------------+-------------+---------------------------
+ jayanzaman | jayanzaman | UTF8     | en_US.UTF-8 | en_US.UTF-8 |
+ postgres   | jayanzaman | UTF8     | en_US.UTF-8 | en_US.UTF-8 |
+ template0  | jayanzaman | UTF8     | en_US.UTF-8 | en_US.UTF-8 | =c/jayanzaman            +
+            |            |          |             |             | jayanzaman=CTc/jayanzaman
+ template1  | jayanzaman | UTF8     | en_US.UTF-8 | en_US.UTF-8 | =c/jayanzaman            +
+            |            |          |             |             | jayanzaman=CTc/jayanzaman
+(4 rows)
+
+jayanzaman-# \d
+No relations found.
+jayanzaman-# createdb xfiles-voters
+jayanzaman-# \l
+                                     List of databases
+    Name    |   Owner    | Encoding |   Collate   |    Ctype    |     Access privileges
+------------+------------+----------+-------------+-------------+---------------------------
+ jayanzaman | jayanzaman | UTF8     | en_US.UTF-8 | en_US.UTF-8 |
+ postgres   | jayanzaman | UTF8     | en_US.UTF-8 | en_US.UTF-8 |
+ template0  | jayanzaman | UTF8     | en_US.UTF-8 | en_US.UTF-8 | =c/jayanzaman            +
+            |            |          |             |             | jayanzaman=CTc/jayanzaman
+ template1  | jayanzaman | UTF8     | en_US.UTF-8 | en_US.UTF-8 | =c/jayanzaman            +
+            |            |          |             |             | jayanzaman=CTc/jayanzaman
+(4 rows)
+
+jayanzaman-# \q
+jayanzaman ~/documents/generalassembly/wdi-xfiles-scully/u2/d04/psql-exercise on master[!]
+$ createdb xfiles-voters
+jayanzaman ~/documents/generalassembly/wdi-xfiles-scully/u2/d04/psql-exercise on master[!]
+$ psql
+psql (9.5.5)
+Type "help" for help.
+
+jayanzaman=# \l
+                                       List of databases
+     Name      |   Owner    | Encoding |   Collate   |    Ctype    |     Access privileges
+---------------+------------+----------+-------------+-------------+---------------------------
+ jayanzaman    | jayanzaman | UTF8     | en_US.UTF-8 | en_US.UTF-8 |
+ postgres      | jayanzaman | UTF8     | en_US.UTF-8 | en_US.UTF-8 |
+ template0     | jayanzaman | UTF8     | en_US.UTF-8 | en_US.UTF-8 | =c/jayanzaman            +
+               |            |          |             |             | jayanzaman=CTc/jayanzaman
+ template1     | jayanzaman | UTF8     | en_US.UTF-8 | en_US.UTF-8 | =c/jayanzaman            +
+               |            |          |             |             | jayanzaman=CTc/jayanzaman
+ xfiles-voters | jayanzaman | UTF8     | en_US.UTF-8 | en_US.UTF-8 |
+(5 rows)
+
+jayanzaman=# \c xfiles-voters
+You are now connected to database "xfiles-voters" as user "jayanzaman".
+xfiles-voters=# select * FROM voters
+xfiles-voters-# ;
+ERROR:  relation "voters" does not exist
+LINE 1: select * FROM voters
+                      ^
+xfiles-voters=# select * FROM voters;
+ERROR:  relation "voters" does not exist
+LINE 1: select * FROM voters;
+                      ^
+xfiles-voters=# \q
+jayanzaman ~/documents/generalassembly/wdi-xfiles-scully/u2/d04/psql-exercise on master[!]
+$ psql -d xfiles-voters -f seeds.sql
+psql:seeds.sql:1: NOTICE:  table "voters" does not exist, skipping
+DROP TABLE
+CREATE TABLE
+INSERT 0 16
+jayanzaman ~/documents/generalassembly/wdi-xfiles-scully/u2/d04/psql-exercise on master[!]
+$ psql
+psql (9.5.5)
+Type "help" for help.
+
+jayanzaman=# \c xfiles-voters
+You are now connected to database "xfiles-voters" as user "jayanzaman".
+xfiles-voters=# select * FROM voters;
+ id |      name      |        email        | age | state | voted |  candidate
+----+----------------+---------------------+-----+-------+-------+--------------
+  1 | John Bell      | bell@ga.co          |  31 | NY    | t     | giant meteor
+  2 | Bryan Mytko    | bryan.mytko@ga.co   |  36 | NY    | f     |
+  3 | Noah Smith     | noah@sample.com     |  35 | NJ    | t     | Hillary
+  4 | Alvin Li       | alvin@sample.com    |  24 | WA    | t     | Trump
+  5 | Reggie Wade    | reggie@sample.com   |  27 | CA    | t     | Hillary
+  6 | Justin Kaza    | justin@sample.com   |  29 | PA    | t     | Trump
+  7 | May Xang       | may@sample.com      |  32 | CA    | f     |
+  8 | Michelle Jones | michelle@sample.com |  62 | NJ    | t     | Trump
+  9 | Frank Wilson   | frank@sample.com    |  41 | PA    | t     | Trump
+ 10 | Claire Abbot   | claire@sample.com   |  55 | FL    | f     |
+ 11 | Pauline Short  | Pauline@sample.com  |  43 | GA    | t     | Hillary
+ 12 | Bernie Sanders | bernie@sample.com   |  70 | WA    | t     | Trump
+ 13 | Timothy Dzick  | timothy@sample.com  |  29 | NM    | f     |
+ 14 | Karen Weber    | karen@sample.com    |  19 | FL    | t     | Trump
+ 15 | Lee Weber      | lee@sample.com      |  32 | AK    | t     | Trump
+ 16 | Bubbles McGee  | karen@sample.com    |  80 | CO    | t     | Hillary
+(16 rows)
+
+xfiles-voters=# SELECT id FROM voters;
+ id
+----
+  1
+  2
+  3
+  4
+  5
+  6
+  7
+  8
+  9
+ 10
+ 11
+ 12
+ 13
+ 14
+ 15
+ 16
+(16 rows)
+
+xfiles-voters=# SELECT name FROM voters WHERE age > 30;
+      name
+----------------
+ John Bell
+ Bryan Mytko
+ Noah Smith
+ May Xang
+ Michelle Jones
+ Frank Wilson
+ Claire Abbot
+ Pauline Short
+ Bernie Sanders
+ Lee Weber
+ Bubbles McGee
+(11 rows)
+
+xfiles-voters=# SELECT name AND age FROM voters WHERE age > 30;
+ERROR:  argument of AND must be type boolean, not type character varying
+LINE 1: SELECT name AND age FROM voters WHERE age > 30;
+               ^
+xfiles-voters=# SELECT name FROM voters WHERE age < 50 AND voted = f;
+ERROR:  column "f" does not exist
+LINE 1: SELECT name FROM voters WHERE age < 50 AND voted = f;
+                                                           ^
+xfiles-voters=# SELECT name,age FROM voters WHERE age > 30
+xfiles-voters-# ;
+      name      | age
+----------------+-----
+ John Bell      |  31
+ Bryan Mytko    |  36
+ Noah Smith     |  35
+ May Xang       |  32
+ Michelle Jones |  62
+ Frank Wilson   |  41
+ Claire Abbot   |  55
+ Pauline Short  |  43
+ Bernie Sanders |  70
+ Lee Weber      |  32
+ Bubbles McGee  |  80
+(11 rows)
+
+xfiles-voters=# SELECT name,state FROM voters WHERE age < 50;
+     name      | state
+---------------+-------
+ John Bell     | NY
+ Bryan Mytko   | NY
+ Noah Smith    | NJ
+ Alvin Li      | WA
+ Reggie Wade   | CA
+ Justin Kaza   | PA
+ May Xang      | CA
+ Frank Wilson  | PA
+ Pauline Short | GA
+ Timothy Dzick | NM
+ Karen Weber   | FL
+ Lee Weber     | AK
+(12 rows)
+
+xfiles-voters=# SELECT name,state FROM voters WHERE age < 50 AND voted = f;
+ERROR:  column "f" does not exist
+LINE 1: SELECT name,state FROM voters WHERE age < 50 AND voted = f;
+                                                                 ^
+xfiles-voters=# SELECT name,state FROM voters WHERE age < 50 AND voted = false;
+     name      | state
+---------------+-------
+ Bryan Mytko   | NY
+ May Xang      | CA
+ Timothy Dzick | NM
+(3 rows)
+
+xfiles-voters=# SELECT name,state FROM voters WHERE age < 50 AND voted = 'f';
+     name      | state
+---------------+-------
+ Bryan Mytko   | NY
+ May Xang      | CA
+ Timothy Dzick | NM
+(3 rows)
+
+xfiles-voters=# SELECT email FROM voters WHERE age > 50;
+        email
+---------------------
+ michelle@sample.com
+ claire@sample.com
+ bernie@sample.com
+ karen@sample.com
+(4 rows)
+
+xfiles-voters=# UPDATE voters SET candidate = Trump WHERE voted = 'f';
+ERROR:  column "trump" does not exist
+LINE 1: UPDATE voters SET candidate = Trump WHERE voted = 'f';
+                                      ^
+xfiles-voters=# UPDATE voters SET candidate = Trump WHERE voted = false;
+ERROR:  column "trump" does not exist
+LINE 1: UPDATE voters SET candidate = Trump WHERE voted = false;
+                                      ^
+xfiles-voters=# UPDATE voters SET candidate = 'Trump' WHERE voted = false;
+UPDATE 4
+xfiles-voters=# SELECT * FROM voters
+xfiles-voters-# ;
+ id |      name      |        email        | age | state | voted |  candidate
+----+----------------+---------------------+-----+-------+-------+--------------
+  1 | John Bell      | bell@ga.co          |  31 | NY    | t     | giant meteor
+  3 | Noah Smith     | noah@sample.com     |  35 | NJ    | t     | Hillary
+  4 | Alvin Li       | alvin@sample.com    |  24 | WA    | t     | Trump
+  5 | Reggie Wade    | reggie@sample.com   |  27 | CA    | t     | Hillary
+  6 | Justin Kaza    | justin@sample.com   |  29 | PA    | t     | Trump
+  8 | Michelle Jones | michelle@sample.com |  62 | NJ    | t     | Trump
+  9 | Frank Wilson   | frank@sample.com    |  41 | PA    | t     | Trump
+ 11 | Pauline Short  | Pauline@sample.com  |  43 | GA    | t     | Hillary
+ 12 | Bernie Sanders | bernie@sample.com   |  70 | WA    | t     | Trump
+ 14 | Karen Weber    | karen@sample.com    |  19 | FL    | t     | Trump
+ 15 | Lee Weber      | lee@sample.com      |  32 | AK    | t     | Trump
+ 16 | Bubbles McGee  | karen@sample.com    |  80 | CO    | t     | Hillary
+  2 | Bryan Mytko    | bryan.mytko@ga.co   |  36 | NY    | f     | Trump
+  7 | May Xang       | may@sample.com      |  32 | CA    | f     | Trump
+ 10 | Claire Abbot   | claire@sample.com   |  55 | FL    | f     | Trump
+ 13 | Timothy Dzick  | timothy@sample.com  |  29 | NM    | f     | Trump
+(16 rows)
+
+xfiles-voters=# UPDATE voters SET voted = 't' WHERE voted = 'f';
+UPDATE 4
+xfiles-voters=# SELECT * FROM voters
+;
+ id |      name      |        email        | age | state | voted |  candidate
+----+----------------+---------------------+-----+-------+-------+--------------
+  1 | John Bell      | bell@ga.co          |  31 | NY    | t     | giant meteor
+  3 | Noah Smith     | noah@sample.com     |  35 | NJ    | t     | Hillary
+  4 | Alvin Li       | alvin@sample.com    |  24 | WA    | t     | Trump
+  5 | Reggie Wade    | reggie@sample.com   |  27 | CA    | t     | Hillary
+  6 | Justin Kaza    | justin@sample.com   |  29 | PA    | t     | Trump
+  8 | Michelle Jones | michelle@sample.com |  62 | NJ    | t     | Trump
+  9 | Frank Wilson   | frank@sample.com    |  41 | PA    | t     | Trump
+ 11 | Pauline Short  | Pauline@sample.com  |  43 | GA    | t     | Hillary
+ 12 | Bernie Sanders | bernie@sample.com   |  70 | WA    | t     | Trump
+ 14 | Karen Weber    | karen@sample.com    |  19 | FL    | t     | Trump
+ 15 | Lee Weber      | lee@sample.com      |  32 | AK    | t     | Trump
+ 16 | Bubbles McGee  | karen@sample.com    |  80 | CO    | t     | Hillary
+  2 | Bryan Mytko    | bryan.mytko@ga.co   |  36 | NY    | t     | Trump
+  7 | May Xang       | may@sample.com      |  32 | CA    | t     | Trump
+ 10 | Claire Abbot   | claire@sample.com   |  55 | FL    | t     | Trump
+ 13 | Timothy Dzick  | timothy@sample.com  |  29 | NM    | t     | Trump
+(16 rows)
+
+xfiles-voters=# SELECT name FROM voters WHERE candidate = 'Hillary';
+     name
+---------------
+ Noah Smith
+ Reggie Wade
+ Pauline Short
+ Bubbles McGee
+(4 rows)
+
+xfiles-voters=# SELECT name FROM voters WHERE candidate = 'Trump';
+      name
+----------------
+ Alvin Li
+ Justin Kaza
+ Michelle Jones
+ Frank Wilson
+ Bernie Sanders
+ Karen Weber
+ Lee Weber
+ Bryan Mytko
+ May Xang
+ Claire Abbot
+ Timothy Dzick
+(11 rows)
+
+xfiles-voters=# DELETE FROM voters WHERE candidate = 'Trump';
+DELETE 11
+xfiles-voters=# SELECT * FROM voters
+;
+ id |     name      |       email        | age | state | voted |  candidate
+----+---------------+--------------------+-----+-------+-------+--------------
+  1 | John Bell     | bell@ga.co         |  31 | NY    | t     | giant meteor
+  3 | Noah Smith    | noah@sample.com    |  35 | NJ    | t     | Hillary
+  5 | Reggie Wade   | reggie@sample.com  |  27 | CA    | t     | Hillary
+ 11 | Pauline Short | Pauline@sample.com |  43 | GA    | t     | Hillary
+ 16 | Bubbles McGee | karen@sample.com   |  80 | CO    | t     | Hillary
+(5 rows)
+
+xfiles-voters=#

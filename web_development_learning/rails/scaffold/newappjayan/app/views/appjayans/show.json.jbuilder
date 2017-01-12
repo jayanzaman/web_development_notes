@@ -1,0 +1,1 @@
+json.partial! "appjayans/appjayan", appjayan: @appjayan

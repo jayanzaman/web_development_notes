@@ -1,0 +1,117 @@
+# How to get a CRUD in Rails Step-By-Step
+
+### Running command codes
+- `rails new <app_name> --database=postgresql`
+- `cd <app_name>`
+- Check if it's working with `rails s` --> localhost:3000
+- `ctrl + c` to get out of server
+- `rails db:create`
+- `rails g model <Capital_singular> <item1>:<string> <item2>:<integer>`
+- Migrate folder with a new migration should have been created
+- `rails db:migrate` - migrations files only run once
+- Schema file should have been created
+- Go into the seeds.rb to edit
+    - model_name.destroy_all
+    - model_name.create([{item1: 'something', item2: 'something else'}, {item1: 'something new', item2: 'something else new'}])
+- `rails db:seed`
+- Add in config --> routes.rb
+    - root to: "table_name#index"
+    - resources :table_name, only:[:index, :create, :destroy, :show, :update]
+- `rails s`
+
+###Writing Controls
+- Generating a Model in command creates an appropriately named controller under app folder
+- Go into the appropriate controller to add methods
+- Typical methods for CRUD are index, create, destroy, show, update (almost alphabetical order)
+ ```rb
+        class UsersController < ApplicationController
+          def index
+            @users = User.all
+
+          end
+
+          def create
+            user = params['user']
+            User.create(name: user[:name],
+                        email: user[:email],
+                        company: user[:company],
+                        feedback: user[:feedback])
+            redirect_to(:back)
+          end
+
+          def destroy
+            User.destroy(params['id'])
+            redirect_to(:back)
+          end
+
+          def show
+            @user = User.find_by(id: params[:id])
+          end
+
+          def update
+            user = params['user']
+            User.update(params[:id],
+                        name: user[:name],
+                        email: user[:email],
+                        company: user[:company],
+                        feedback: user[:feedback])
+            redirect_to(:back)
+          end
+
+        end
+```
+
+###Writing Views
+- `rails routes` can tell us about all the routes created
+- Ideally index, show, new, update should have their own html in views in their respective folder
+- Example of an index.html.erb
+```rb
+<%= form_for :user, method: 'POST', url: {action: 'create'} do |f| %>
+  <%= label(:user, :name) %>
+  <%= f.text_field :name %>
+  <%= label(:user, :email) %>
+  <%= f.text_field :email %>
+  <%= label(:user, :company) %>
+  <%= f.text_field :company %>
+  <%= label(:user, :feedback) %>
+  <%= f.text_field :feedback %>
+<br>
+<%= f.submit 'Create New User' %>
+<% end %>
+```
+<% @users.each do |user| %>
+  <%= user['name'] %> -
+  <%= mail_to user['email'], user['email'] %>
+  from
+  <i><%= user['company'] %><i>
+  <br>
+  Their Feedback:
+  <i><%= user['feedback'] %><i>
+  <br><br>
+
+  <%= link_to 'Remove User', user, method: :delete %><br>
+  <%= link_to 'View/Edit User', user, method: :get %><br>
+  <hr>
+
+  <% end %>
+```
+- Example of a show.html.erb
+```rb
+<%= @user['name'] %><br>
+<%= mail_to @user['email'], @user['email'] %><br>
+Works for: <%= @user['company'] %><br>
+Feedback Provided: <%= @user['feedback'] %><br>
+<br>
+<%= form_for :user, method: 'patch', url: {action: 'update'} do |f| %>
+  <%= label(:user, :name) %>
+  <%= f.text_field :name %>
+  <%= label(:user, :email) %>
+  <%= f.text_field :email %>
+  <%= label(:user, :company) %>
+  <%= f.text_field :company %>
+  <%= label(:user, :feedback) %>
+  <%= f.text_field :feedback %>
+<br>
+<%= f.submit 'Save your edits' %>
+<% end %>
+```

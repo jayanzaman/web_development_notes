@@ -1,0 +1,17 @@
+<p id="notice"><%= notice %></p>
+<%= render 'gallery', create_rock: @create_rock %>
+<p>
+  <strong>Name:</strong>
+  <%= @create_rock.name %>
+</p>
+<img src="<%= @create_rock.image %>">
+<p>
+  <strong>Description:</strong>
+  <%= @create_rock.description %>
+</p>
+
+
+<br>
+
+<%= link_to 'Edit', edit_create_rock_path(@create_rock) %> |
+<%= link_to 'Back', create_rocks_path %>

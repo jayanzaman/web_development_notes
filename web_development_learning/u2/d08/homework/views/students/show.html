@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Student View</title>
+  <link rel="stylesheet" href="../stylesheets/styles.css">
+</head>
+<body>
+    <div class="student">
+      {{#students}}
+      <h1>{{fname}} {{lname}}</h1>
+      <img src="{{image}}">
+      {{/students}}
+    </div>
+</body>
+</html>

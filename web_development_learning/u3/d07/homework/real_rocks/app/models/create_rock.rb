@@ -1,0 +1,2 @@
+class CreateRock < ApplicationRecord
+end

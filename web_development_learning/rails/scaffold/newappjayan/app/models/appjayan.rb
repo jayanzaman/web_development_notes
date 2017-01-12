@@ -1,0 +1,2 @@
+class Appjayan < ApplicationRecord
+end

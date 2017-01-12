@@ -1,0 +1,32 @@
+<p>The id is: {{id}}</p>
+
+{{#students}}
+<<<<<<< HEAD
+<ul>
+  <li>{{name}}</li>
+</ul>
+{{/students}}
+
+
+<h3>one way</h3>
+=======
+  <p>{{name}}</p>
+{{/students}}
+>>>>>>> 60137dfa88d6547a0bae1e34236b62bebb23bfcd
+
+<h3>partials</h3>
+
+
+<p>We can use partials to pass in named sub-templates.</p>
+{{#students}}
+  {{> foolishPartial}}
+{{/students}}
+
+<p>again</p>
+
+{{#students}}
+	<p>this is another 'partial' rendering the current name, which is {{name}}</p>
+{{/students}}
+
+
+<h1>{{> foolishPartial}}</h1>

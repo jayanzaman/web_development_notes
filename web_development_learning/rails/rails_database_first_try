@@ -1,0 +1,602 @@
+Last login: Fri Dec  9 09:09:49 on ttys000
+jayanzaman ~/Documents/GeneralAssembly/WDI-xfiles-scully/u3/d05 on master[!]
+$ cd ../..
+jayanzaman ~/Documents/GeneralAssembly/WDI-xfiles-scully on master[!?]
+$ cd ..
+jayanzaman ~/Documents/GeneralAssembly
+$ cd web_development_learning/
+jayanzaman ~/Documents/GeneralAssembly/web_development_learning on master
+$ cd web_development_learning/
+jayanzaman ~/Documents/GeneralAssembly/web_development_learning/web_development_learning on master[?]
+$ ls
+CSS/	     Encryption/     README.md	     homework/	  mitkoRealty/	psql/	sinatra/
+Chart/	     JS_DOM/	     clojure/	     jqueryHW/	  node/		rails/
+DemoDeploy/  ObjectsArrays/  heroku_lesson/  looseFiles/  prototypes/	ruby/
+jayanzaman ~/Documents/GeneralAssembly/web_development_learning/web_development_learning on master[?]
+$ cd rails/
+jayanzaman ~/Documents/GeneralAssembly/web_development_learning/web_development_learning/rails on master[?]
+$ mkdir partials_helpers
+gmkdir: created directory 'partials_helpers'
+jayanzaman ~/Documents/GeneralAssembly/web_development_learning/web_development_learning/rails on master[?]
+$ cd partials_helpers/
+jayanzaman ~/Documents/GeneralAssembly/web_development_learning/web_development_learning/rails/partials_helpers on master
+$ rails new partials_helpers
+      create  
+      create  README.md
+      create  Rakefile
+      create  config.ru
+      create  .gitignore
+      create  Gemfile
+      create  app
+      create  app/assets/config/manifest.js
+      create  app/assets/javascripts/application.js
+      create  app/assets/javascripts/cable.js
+      create  app/assets/stylesheets/application.css
+      create  app/channels/application_cable/channel.rb
+      create  app/channels/application_cable/connection.rb
+      create  app/controllers/application_controller.rb
+      create  app/helpers/application_helper.rb
+      create  app/jobs/application_job.rb
+      create  app/mailers/application_mailer.rb
+      create  app/models/application_record.rb
+      create  app/views/layouts/application.html.erb
+      create  app/views/layouts/mailer.html.erb
+      create  app/views/layouts/mailer.text.erb
+      create  app/assets/images/.keep
+      create  app/assets/javascripts/channels
+      create  app/assets/javascripts/channels/.keep
+      create  app/controllers/concerns/.keep
+      create  app/models/concerns/.keep
+      create  bin
+      create  bin/bundle
+      create  bin/rails
+      create  bin/rake
+      create  bin/setup
+      create  bin/update
+      create  config
+      create  config/routes.rb
+      create  config/application.rb
+      create  config/environment.rb
+      create  config/secrets.yml
+      create  config/cable.yml
+      create  config/puma.rb
+      create  config/spring.rb
+      create  config/environments
+      create  config/environments/development.rb
+      create  config/environments/production.rb
+      create  config/environments/test.rb
+      create  config/initializers
+      create  config/initializers/application_controller_renderer.rb
+      create  config/initializers/assets.rb
+      create  config/initializers/backtrace_silencers.rb
+      create  config/initializers/cookies_serializer.rb
+      create  config/initializers/cors.rb
+      create  config/initializers/filter_parameter_logging.rb
+      create  config/initializers/inflections.rb
+      create  config/initializers/mime_types.rb
+      create  config/initializers/new_framework_defaults.rb
+      create  config/initializers/session_store.rb
+      create  config/initializers/wrap_parameters.rb
+      create  config/locales
+      create  config/locales/en.yml
+      create  config/boot.rb
+      create  config/database.yml
+      create  db
+      create  db/seeds.rb
+      create  lib
+      create  lib/tasks
+      create  lib/tasks/.keep
+      create  lib/assets
+      create  lib/assets/.keep
+      create  log
+      create  log/.keep
+      create  public
+      create  public/404.html
+      create  public/422.html
+      create  public/500.html
+      create  public/apple-touch-icon-precomposed.png
+      create  public/apple-touch-icon.png
+      create  public/favicon.ico
+      create  public/robots.txt
+      create  test/fixtures
+      create  test/fixtures/.keep
+      create  test/fixtures/files
+      create  test/fixtures/files/.keep
+      create  test/controllers
+      create  test/controllers/.keep
+      create  test/mailers
+      create  test/mailers/.keep
+      create  test/models
+      create  test/models/.keep
+      create  test/helpers
+      create  test/helpers/.keep
+      create  test/integration
+      create  test/integration/.keep
+      create  test/test_helper.rb
+      create  tmp
+      create  tmp/.keep
+      create  tmp/cache
+      create  tmp/cache/assets
+      create  vendor/assets/javascripts
+      create  vendor/assets/javascripts/.keep
+      create  vendor/assets/stylesheets
+      create  vendor/assets/stylesheets/.keep
+      remove  config/initializers/cors.rb
+         run  bundle install
+Fetching gem metadata from https://rubygems.org/..........
+Fetching version metadata from https://rubygems.org/..
+Fetching dependency metadata from https://rubygems.org/.
+Resolving dependencies...
+Using rake 12.0.0
+Using concurrent-ruby 1.0.2
+Using i18n 0.7.0
+Using minitest 5.10.1
+Using thread_safe 0.3.5
+Using builder 3.2.2
+Using erubis 2.7.0
+Using mini_portile2 2.1.0
+Using rack 2.0.1
+Using nio4r 1.2.1
+Using websocket-extensions 0.1.2
+Using mime-types-data 3.2016.0521
+Using arel 7.1.4
+Using bundler 1.13.6
+Using byebug 9.0.6
+Using coffee-script-source 1.11.1
+Using execjs 2.7.0
+Using method_source 0.8.2
+Using thor 0.19.4
+Using debug_inspector 0.0.2
+Using ffi 1.9.14
+Using multi_json 1.12.1
+Using rb-fsevent 0.9.8
+Using puma 3.6.2
+Using sass 3.4.22
+Using tilt 2.0.5
+Using sqlite3 1.3.12
+Using turbolinks-source 5.0.0
+Using tzinfo 1.2.2
+Using nokogiri 1.6.8.1
+Using rack-test 0.6.3
+Using sprockets 3.7.0
+Using websocket-driver 0.6.4
+Using mime-types 3.1
+Using coffee-script 2.4.1
+Using uglifier 3.0.4
+Using rb-inotify 0.9.7
+Using turbolinks 5.0.1
+Using activesupport 5.0.0.1
+Using loofah 2.0.3
+Using mail 2.6.4
+Using listen 3.0.8
+Using rails-dom-testing 2.0.1
+Using globalid 0.3.7
+Using activemodel 5.0.0.1
+Using jbuilder 2.6.1
+Using spring 2.0.0
+Using rails-html-sanitizer 1.0.3
+Using activejob 5.0.0.1
+Using activerecord 5.0.0.1
+Using spring-watcher-listen 2.0.1
+Using actionview 5.0.0.1
+Using actionpack 5.0.0.1
+Using actioncable 5.0.0.1
+Using actionmailer 5.0.0.1
+Using railties 5.0.0.1
+Using sprockets-rails 3.2.0
+Using coffee-rails 4.2.1
+Using jquery-rails 4.2.1
+Using web-console 3.4.0
+Using rails 5.0.0.1
+Using sass-rails 5.0.6
+Bundle complete! 15 Gemfile dependencies, 62 gems now installed.
+Use `bundle show [gemname]` to see where a bundled gem is installed.
+         run  bundle exec spring binstub --all
+* bin/rake: spring inserted
+* bin/rails: spring inserted
+jayanzaman ~/Documents/GeneralAssembly/web_development_learning/web_development_learning/rails/partials_helpers on master[?]
+$ ls
+partials_helpers/
+jayanzaman ~/Documents/GeneralAssembly/web_development_learning/web_development_learning/rails/partials_helpers on master[?]
+$ cd partials_helpers/
+jayanzaman ~/Documents/GeneralAssembly/web_development_learning/web_development_learning/rails/partials_helpers/partials_helpers on master[?]
+$ ls
+Gemfile       README.md  app/  config/	  db/	log/	 test/	vendor/
+Gemfile.lock  Rakefile	 bin/  config.ru  lib/	public/  tmp/
+jayanzaman ~/Documents/GeneralAssembly/web_development_learning/web_development_learning/rails/partials_helpers/partials_helpers on master[?]
+$ git add .
+jayanzaman ~/Documents/GeneralAssembly/web_development_learning/web_development_learning/rails/partials_helpers/partials_helpers on master[+]
+$ git commit -m"rails helpers and partials"
+[master f1e4ada] rails helpers and partials
+ 74 files changed, 1131 insertions(+)
+ create mode 100644 rails/partials_helpers/partials_helpers/.gitignore
+ create mode 100644 rails/partials_helpers/partials_helpers/Gemfile
+ create mode 100644 rails/partials_helpers/partials_helpers/Gemfile.lock
+ create mode 100644 rails/partials_helpers/partials_helpers/README.md
+ create mode 100644 rails/partials_helpers/partials_helpers/Rakefile
+ create mode 100644 rails/partials_helpers/partials_helpers/app/assets/config/manifest.js
+ create mode 100644 rails/partials_helpers/partials_helpers/app/assets/images/.keep
+ create mode 100644 rails/partials_helpers/partials_helpers/app/assets/javascripts/application.js
+ create mode 100644 rails/partials_helpers/partials_helpers/app/assets/javascripts/cable.js
+ create mode 100644 rails/partials_helpers/partials_helpers/app/assets/javascripts/channels/.keep
+ create mode 100644 rails/partials_helpers/partials_helpers/app/assets/stylesheets/application.css
+ create mode 100644 rails/partials_helpers/partials_helpers/app/channels/application_cable/channel.rb
+ create mode 100644 rails/partials_helpers/partials_helpers/app/channels/application_cable/connection.rb
+ create mode 100644 rails/partials_helpers/partials_helpers/app/controllers/application_controller.rb
+ create mode 100644 rails/partials_helpers/partials_helpers/app/controllers/concerns/.keep
+ create mode 100644 rails/partials_helpers/partials_helpers/app/helpers/application_helper.rb
+ create mode 100644 rails/partials_helpers/partials_helpers/app/jobs/application_job.rb
+ create mode 100644 rails/partials_helpers/partials_helpers/app/mailers/application_mailer.rb
+ create mode 100644 rails/partials_helpers/partials_helpers/app/models/application_record.rb
+ create mode 100644 rails/partials_helpers/partials_helpers/app/models/concerns/.keep
+ create mode 100644 rails/partials_helpers/partials_helpers/app/views/layouts/application.html.erb
+ create mode 100644 rails/partials_helpers/partials_helpers/app/views/layouts/mailer.html.erb
+ create mode 100644 rails/partials_helpers/partials_helpers/app/views/layouts/mailer.text.erb
+ create mode 100755 rails/partials_helpers/partials_helpers/bin/bundle
+ create mode 100755 rails/partials_helpers/partials_helpers/bin/rails
+ create mode 100755 rails/partials_helpers/partials_helpers/bin/rake
+ create mode 100755 rails/partials_helpers/partials_helpers/bin/setup
+ create mode 100755 rails/partials_helpers/partials_helpers/bin/spring
+ create mode 100755 rails/partials_helpers/partials_helpers/bin/update
+ create mode 100644 rails/partials_helpers/partials_helpers/config.ru
+ create mode 100644 rails/partials_helpers/partials_helpers/config/application.rb
+ create mode 100644 rails/partials_helpers/partials_helpers/config/boot.rb
+ create mode 100644 rails/partials_helpers/partials_helpers/config/cable.yml
+ create mode 100644 rails/partials_helpers/partials_helpers/config/database.yml
+ create mode 100644 rails/partials_helpers/partials_helpers/config/environment.rb
+ create mode 100644 rails/partials_helpers/partials_helpers/config/environments/development.rb
+ create mode 100644 rails/partials_helpers/partials_helpers/config/environments/production.rb
+ create mode 100644 rails/partials_helpers/partials_helpers/config/environments/test.rb
+ create mode 100644 rails/partials_helpers/partials_helpers/config/initializers/application_controller_renderer.rb
+ create mode 100644 rails/partials_helpers/partials_helpers/config/initializers/assets.rb
+ create mode 100644 rails/partials_helpers/partials_helpers/config/initializers/backtrace_silencers.rb
+ create mode 100644 rails/partials_helpers/partials_helpers/config/initializers/cookies_serializer.rb
+ create mode 100644 rails/partials_helpers/partials_helpers/config/initializers/filter_parameter_logging.rb
+ create mode 100644 rails/partials_helpers/partials_helpers/config/initializers/inflections.rb
+ create mode 100644 rails/partials_helpers/partials_helpers/config/initializers/mime_types.rb
+ create mode 100644 rails/partials_helpers/partials_helpers/config/initializers/new_framework_defaults.rb
+ create mode 100644 rails/partials_helpers/partials_helpers/config/initializers/session_store.rb
+ create mode 100644 rails/partials_helpers/partials_helpers/config/initializers/wrap_parameters.rb
+ create mode 100644 rails/partials_helpers/partials_helpers/config/locales/en.yml
+ create mode 100644 rails/partials_helpers/partials_helpers/config/puma.rb
+ create mode 100644 rails/partials_helpers/partials_helpers/config/routes.rb
+ create mode 100644 rails/partials_helpers/partials_helpers/config/secrets.yml
+ create mode 100644 rails/partials_helpers/partials_helpers/config/spring.rb
+ create mode 100644 rails/partials_helpers/partials_helpers/db/seeds.rb
+ create mode 100644 rails/partials_helpers/partials_helpers/lib/assets/.keep
+ create mode 100644 rails/partials_helpers/partials_helpers/lib/tasks/.keep
+ create mode 100644 rails/partials_helpers/partials_helpers/log/.keep
+ create mode 100644 rails/partials_helpers/partials_helpers/public/404.html
+ create mode 100644 rails/partials_helpers/partials_helpers/public/422.html
+ create mode 100644 rails/partials_helpers/partials_helpers/public/500.html
+ create mode 100644 rails/partials_helpers/partials_helpers/public/apple-touch-icon-precomposed.png
+ create mode 100644 rails/partials_helpers/partials_helpers/public/apple-touch-icon.png
+ create mode 100644 rails/partials_helpers/partials_helpers/public/favicon.ico
+ create mode 100644 rails/partials_helpers/partials_helpers/public/robots.txt
+ create mode 100644 rails/partials_helpers/partials_helpers/test/controllers/.keep
+ create mode 100644 rails/partials_helpers/partials_helpers/test/fixtures/.keep
+ create mode 100644 rails/partials_helpers/partials_helpers/test/fixtures/files/.keep
+ create mode 100644 rails/partials_helpers/partials_helpers/test/helpers/.keep
+ create mode 100644 rails/partials_helpers/partials_helpers/test/integration/.keep
+ create mode 100644 rails/partials_helpers/partials_helpers/test/mailers/.keep
+ create mode 100644 rails/partials_helpers/partials_helpers/test/models/.keep
+ create mode 100644 rails/partials_helpers/partials_helpers/test/test_helper.rb
+ create mode 100644 rails/partials_helpers/partials_helpers/vendor/assets/javascripts/.keep
+ create mode 100644 rails/partials_helpers/partials_helpers/vendor/assets/stylesheets/.keep
+jayanzaman ~/Documents/GeneralAssembly/web_development_learning/web_development_learning/rails/partials_helpers/partials_helpers on master
+$ git push origin master
+Counting objects: 87, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (71/71), done.
+Writing objects: 100% (87/87), 20.25 KiB | 0 bytes/s, done.
+Total 87 (delta 3), reused 0 (delta 0)
+remote: Resolving deltas: 100% (3/3), completed with 1 local objects.
+To https://github.com/jayanzaman/web_development_learning.git
+   e7b9525..f1e4ada  master -> master
+jayanzaman ~/Documents/GeneralAssembly/web_development_learning/web_development_learning/rails/partials_helpers/partials_helpers on master
+$ ls
+Gemfile       README.md  app/  config/	  db/	log/	 test/	vendor/
+Gemfile.lock  Rakefile	 bin/  config.ru  lib/	public/  tmp/
+jayanzaman ~/Documents/GeneralAssembly/web_development_learning/web_development_learning/rails/partials_helpers/partials_helpers on master
+$ rails db:create
+Created database 'db/development.sqlite3'
+Created database 'db/test.sqlite3'
+jayanzaman ~/Documents/GeneralAssembly/web_development_learning/web_development_learning/rails/partials_helpers/partials_helpers on master
+$ cd ..
+jayanzaman ~/Documents/GeneralAssembly/web_development_learning/web_development_learning/rails/partials_helpers on master
+$ cd ..
+jayanzaman ~/Documents/GeneralAssembly/web_development_learning/web_development_learning/rails on master[?]
+$ mkdir partials_helpers_1
+gmkdir: created directory 'partials_helpers_1'
+jayanzaman ~/Documents/GeneralAssembly/web_development_learning/web_development_learning/rails on master[?]
+$ cd partials_helpers_1/
+jayanzaman ~/Documents/GeneralAssembly/web_development_learning/web_development_learning/rails/partials_helpers_1 on master
+$ rails new partials_helpers --database=postgresql
+      create  
+      create  README.md
+      create  Rakefile
+      create  config.ru
+      create  .gitignore
+      create  Gemfile
+      create  app
+      create  app/assets/config/manifest.js
+      create  app/assets/javascripts/application.js
+      create  app/assets/javascripts/cable.js
+      create  app/assets/stylesheets/application.css
+      create  app/channels/application_cable/channel.rb
+      create  app/channels/application_cable/connection.rb
+      create  app/controllers/application_controller.rb
+      create  app/helpers/application_helper.rb
+      create  app/jobs/application_job.rb
+      create  app/mailers/application_mailer.rb
+      create  app/models/application_record.rb
+      create  app/views/layouts/application.html.erb
+      create  app/views/layouts/mailer.html.erb
+      create  app/views/layouts/mailer.text.erb
+      create  app/assets/images/.keep
+      create  app/assets/javascripts/channels
+      create  app/assets/javascripts/channels/.keep
+      create  app/controllers/concerns/.keep
+      create  app/models/concerns/.keep
+      create  bin
+      create  bin/bundle
+      create  bin/rails
+      create  bin/rake
+      create  bin/setup
+      create  bin/update
+      create  config
+      create  config/routes.rb
+      create  config/application.rb
+      create  config/environment.rb
+      create  config/secrets.yml
+      create  config/cable.yml
+      create  config/puma.rb
+      create  config/spring.rb
+      create  config/environments
+      create  config/environments/development.rb
+      create  config/environments/production.rb
+      create  config/environments/test.rb
+      create  config/initializers
+      create  config/initializers/application_controller_renderer.rb
+      create  config/initializers/assets.rb
+      create  config/initializers/backtrace_silencers.rb
+      create  config/initializers/cookies_serializer.rb
+      create  config/initializers/cors.rb
+      create  config/initializers/filter_parameter_logging.rb
+      create  config/initializers/inflections.rb
+      create  config/initializers/mime_types.rb
+      create  config/initializers/new_framework_defaults.rb
+      create  config/initializers/session_store.rb
+      create  config/initializers/wrap_parameters.rb
+      create  config/locales
+      create  config/locales/en.yml
+      create  config/boot.rb
+      create  config/database.yml
+      create  db
+      create  db/seeds.rb
+      create  lib
+      create  lib/tasks
+      create  lib/tasks/.keep
+      create  lib/assets
+      create  lib/assets/.keep
+      create  log
+      create  log/.keep
+      create  public
+      create  public/404.html
+      create  public/422.html
+      create  public/500.html
+      create  public/apple-touch-icon-precomposed.png
+      create  public/apple-touch-icon.png
+      create  public/favicon.ico
+      create  public/robots.txt
+      create  test/fixtures
+      create  test/fixtures/.keep
+      create  test/fixtures/files
+      create  test/fixtures/files/.keep
+      create  test/controllers
+      create  test/controllers/.keep
+      create  test/mailers
+      create  test/mailers/.keep
+      create  test/models
+      create  test/models/.keep
+      create  test/helpers
+      create  test/helpers/.keep
+      create  test/integration
+      create  test/integration/.keep
+      create  test/test_helper.rb
+      create  tmp
+      create  tmp/.keep
+      create  tmp/cache
+      create  tmp/cache/assets
+      create  vendor/assets/javascripts
+      create  vendor/assets/javascripts/.keep
+      create  vendor/assets/stylesheets
+      create  vendor/assets/stylesheets/.keep
+      remove  config/initializers/cors.rb
+         run  bundle install
+Fetching gem metadata from https://rubygems.org/..........
+Fetching version metadata from https://rubygems.org/..
+Fetching dependency metadata from https://rubygems.org/.
+Resolving dependencies...
+Using rake 12.0.0
+Using concurrent-ruby 1.0.2
+Using i18n 0.7.0
+Using minitest 5.10.1
+Using thread_safe 0.3.5
+Using builder 3.2.2
+Using erubis 2.7.0
+Using mini_portile2 2.1.0
+Using rack 2.0.1
+Using nio4r 1.2.1
+Using websocket-extensions 0.1.2
+Using mime-types-data 3.2016.0521
+Using arel 7.1.4
+Using bundler 1.13.6
+Using byebug 9.0.6
+Using coffee-script-source 1.11.1
+Using execjs 2.7.0
+Using method_source 0.8.2
+Using thor 0.19.4
+Using debug_inspector 0.0.2
+Using ffi 1.9.14
+Using multi_json 1.12.1
+Using rb-fsevent 0.9.8
+Using pg 0.19.0
+Using puma 3.6.2
+Using sass 3.4.22
+Using tilt 2.0.5
+Using turbolinks-source 5.0.0
+Using tzinfo 1.2.2
+Using nokogiri 1.6.8.1
+Using rack-test 0.6.3
+Using sprockets 3.7.0
+Using websocket-driver 0.6.4
+Using mime-types 3.1
+Using coffee-script 2.4.1
+Using uglifier 3.0.4
+Using rb-inotify 0.9.7
+Using turbolinks 5.0.1
+Using activesupport 5.0.0.1
+Using loofah 2.0.3
+Using mail 2.6.4
+Using listen 3.0.8
+Using rails-dom-testing 2.0.1
+Using globalid 0.3.7
+Using activemodel 5.0.0.1
+Using jbuilder 2.6.1
+Using spring 2.0.0
+Using rails-html-sanitizer 1.0.3
+Using activejob 5.0.0.1
+Using activerecord 5.0.0.1
+Using spring-watcher-listen 2.0.1
+Using actionview 5.0.0.1
+Using actionpack 5.0.0.1
+Using actioncable 5.0.0.1
+Using actionmailer 5.0.0.1
+Using railties 5.0.0.1
+Using sprockets-rails 3.2.0
+Using coffee-rails 4.2.1
+Using jquery-rails 4.2.1
+Using web-console 3.4.0
+Using rails 5.0.0.1
+Using sass-rails 5.0.6
+Bundle complete! 15 Gemfile dependencies, 62 gems now installed.
+Use `bundle show [gemname]` to see where a bundled gem is installed.
+         run  bundle exec spring binstub --all
+* bin/rake: spring inserted
+* bin/rails: spring inserted
+jayanzaman ~/Documents/GeneralAssembly/web_development_learning/web_development_learning/rails/partials_helpers_1 on master[?]
+$ ls
+partials_helpers/
+jayanzaman ~/Documents/GeneralAssembly/web_development_learning/web_development_learning/rails/partials_helpers_1 on master[?]
+$ cd partials_helpers/
+jayanzaman ~/Documents/GeneralAssembly/web_development_learning/web_development_learning/rails/partials_helpers_1/partials_helpers on master[?]
+$ ls
+Gemfile       README.md  app/  config/	  db/	log/	 test/	vendor/
+Gemfile.lock  Rakefile	 bin/  config.ru  lib/	public/  tmp/
+jayanzaman ~/Documents/GeneralAssembly/web_development_learning/web_development_learning/rails/partials_helpers_1/partials_helpers on master[?]
+$ rails db:create
+Created database 'partials_helpers_development'
+Created database 'partials_helpers_test'
+jayanzaman ~/Documents/GeneralAssembly/web_development_learning/web_development_learning/rails/partials_helpers_1/partials_helpers on master[?]
+$ cd ..
+jayanzaman ~/Documents/GeneralAssembly/web_development_learning/web_development_learning/rails/partials_helpers_1 on master[?]
+$ subl partials_helpers/
+jayanzaman ~/Documents/GeneralAssembly/web_development_learning/web_development_learning/rails/partials_helpers_1 on master[?]
+$ cd partials_helpers/
+jayanzaman ~/Documents/GeneralAssembly/web_development_learning/web_development_learning/rails/partials_helpers_1/partials_helpers on master[?]
+$ rails g migration create_users first_name:string last_name:string email:string age:integer
+Running via Spring preloader in process 76303
+Expected string default value for '--jbuilder'; got true (boolean)
+      invoke  active_record
+      create    db/migrate/20161209154317_create_users.rb
+jayanzaman ~/Documents/GeneralAssembly/web_development_learning/web_development_learning/rails/partials_helpers_1/partials_helpers on master[?]
+$ rails g migration create_projects name:string url:string
+Running via Spring preloader in process 76352
+Expected string default value for '--jbuilder'; got true (boolean)
+      invoke  active_record
+      create    db/migrate/20161209154427_create_projects.rb
+jayanzaman ~/Documents/GeneralAssembly/web_development_learning/web_development_learning/rails/partials_helpers_1/partials_helpers on master[?]
+$ rails db:migrate
+== 20161209154317 CreateUsers: migrating ======================================
+-- create_table(:users)
+   -> 0.0240s
+== 20161209154317 CreateUsers: migrated (0.0241s) =============================
+
+== 20161209154427 CreateProjects: migrating ===================================
+-- create_table(:projects)
+   -> 0.0138s
+== 20161209154427 CreateProjects: migrated (0.0139s) ==========================
+
+jayanzaman ~/Documents/GeneralAssembly/web_development_learning/web_development_learning/rails/partials_helpers_1/partials_helpers on master[?]
+$ rails db:migrate
+jayanzaman ~/Documents/GeneralAssembly/web_development_learning/web_development_learning/rails/partials_helpers_1/partials_helpers on master[?]
+$ rails db:migrate
+jayanzaman ~/Documents/GeneralAssembly/web_development_learning/web_development_learning/rails/partials_helpers_1/partials_helpers on master[?]
+$ rails db:c
+rails aborted!
+Don't know how to build task 'db:c' (see --tasks)
+/Users/jayanzaman/Documents/GeneralAssembly/web_development_learning/web_development_learning/rails/partials_helpers_1/partials_helpers/bin/rails:9:in `require'
+/Users/jayanzaman/Documents/GeneralAssembly/web_development_learning/web_development_learning/rails/partials_helpers_1/partials_helpers/bin/rails:9:in `<top (required)>'
+/Users/jayanzaman/Documents/GeneralAssembly/web_development_learning/web_development_learning/rails/partials_helpers_1/partials_helpers/bin/spring:14:in `<top (required)>'
+bin/rails:3:in `load'
+bin/rails:3:in `<main>'
+(See full trace by running task with --trace)
+jayanzaman ~/Documents/GeneralAssembly/web_development_learning/web_development_learning/rails/partials_helpers_1/partials_helpers on master[?]
+$ rails db:seeds
+rails aborted!
+Don't know how to build task 'db:seeds' (see --tasks)
+/Users/jayanzaman/Documents/GeneralAssembly/web_development_learning/web_development_learning/rails/partials_helpers_1/partials_helpers/bin/rails:9:in `require'
+/Users/jayanzaman/Documents/GeneralAssembly/web_development_learning/web_development_learning/rails/partials_helpers_1/partials_helpers/bin/rails:9:in `<top (required)>'
+/Users/jayanzaman/Documents/GeneralAssembly/web_development_learning/web_development_learning/rails/partials_helpers_1/partials_helpers/bin/spring:14:in `<top (required)>'
+bin/rails:3:in `load'
+bin/rails:3:in `<main>'
+(See full trace by running task with --trace)
+jayanzaman ~/Documents/GeneralAssembly/web_development_learning/web_development_learning/rails/partials_helpers_1/partials_helpers on master[?]
+$ rails db:seed
+jayanzaman ~/Documents/GeneralAssembly/web_development_learning/web_development_learning/rails/partials_helpers_1/partials_helpers on master[?]
+$ rails c
+Running via Spring preloader in process 77099
+Loading development environment (Rails 5.0.0.1)
+=> Unable to load pry. Try gem install pry
+irb(main):001:0> user.all
+NameError: undefined local variable or method `user' for main:Object
+	from (irb):1
+	from /Users/jayanzaman/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-5.0.0.1/lib/rails/commands/console.rb:65:in `start'
+	from /Users/jayanzaman/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-5.0.0.1/lib/rails/commands/console_helper.rb:9:in `start'
+	from /Users/jayanzaman/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-5.0.0.1/lib/rails/commands/commands_tasks.rb:78:in `console'
+	from /Users/jayanzaman/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-5.0.0.1/lib/rails/commands/commands_tasks.rb:49:in `run_command!'
+	from /Users/jayanzaman/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-5.0.0.1/lib/rails/commands.rb:18:in `<top (required)>'
+	from /Users/jayanzaman/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-5.0.0.1/lib/active_support/dependencies.rb:293:in `require'
+	from /Users/jayanzaman/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-5.0.0.1/lib/active_support/dependencies.rb:293:in `block in require'
+	from /Users/jayanzaman/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-5.0.0.1/lib/active_support/dependencies.rb:259:in `load_dependency'
+	from /Users/jayanzaman/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-5.0.0.1/lib/active_support/dependencies.rb:293:in `require'
+	from /Users/jayanzaman/Documents/GeneralAssembly/web_development_learning/web_development_learning/rails/partials_helpers_1/partials_helpers/bin/rails:9:in `<top (required)>'
+	from /Users/jayanzaman/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-5.0.0.1/lib/active_support/dependencies.rb:287:in `load'
+	from /Users/jayanzaman/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-5.0.0.1/lib/active_support/dependencies.rb:287:in `block in load'
+	from /Users/jayanzaman/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-5.0.0.1/lib/active_support/dependencies.rb:259:in `load_dependency'
+	from /Users/jayanzaman/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-5.0.0.1/lib/active_support/dependencies.rb:287:in `load'
+	from /Users/jayanzaman/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/spring-2.0.0/lib/spring/commands/rails.rb:6:in `call'
+	from /Users/jayanzaman/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/spring-2.0.0/lib/spring/command_wrapper.rb:38:in `call'
+	from /Users/jayanzaman/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/spring-2.0.0/lib/spring/application.rb:191:in `block in serve'
+	from /Users/jayanzaman/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/spring-2.0.0/lib/spring/application.rb:161:in `fork'
+	from /Users/jayanzaman/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/spring-2.0.0/lib/spring/application.rb:161:in `serve'
+	from /Users/jayanzaman/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/spring-2.0.0/lib/spring/application.rb:131:in `block in run'
+	from /Users/jayanzaman/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/spring-2.0.0/lib/spring/application.rb:125:in `loop'
+	from /Users/jayanzaman/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/spring-2.0.0/lib/spring/application.rb:125:in `run'
+	from /Users/jayanzaman/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/spring-2.0.0/lib/spring/application/boot.rb:19:in `<top (required)>'
+	from /Users/jayanzaman/.rbenv/versions/2.2.3/lib/ruby/2.2.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+	from /Users/jayanzaman/.rbenv/versions/2.2.3/lib/ruby/2.2.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+irb(main):002:0> User.all
+  User Load (0.3ms)  SELECT "users".* FROM "users"
+=> #<ActiveRecord::Relation [#<User id: 1, first_name: "John", last_name: "Bell", email: "bell@ga.co", age: 30>, #<User id: 2, first_name: "Bryan", last_name: "Mytko", email: "bryan.mytko@ga.co", age: 34>, #<User id: 3, first_name: "Jayan", last_name: "Zaman", email: "jayanzaman@gmail.com", age: 34>]>
+irb(main):003:0> User.last.first_name
+  User Load (0.3ms)  SELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1  [["LIMIT", 1]]
+=> "Jayan"
+irb(main):004:0> User.first.last_name
+  User Load (0.3ms)  SELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1  [["LIMIT", 1]]
+=> "Bell"
+irb(main):005:0> User.first.age
+  User Load (0.4ms)  SELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1  [["LIMIT", 1]]
+=> 30
+irb(main):006:0> 

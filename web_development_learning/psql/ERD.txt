@@ -1,0 +1,2 @@
+the conceptual drawing would help with designing the database. 
+Entities can have relationships and attributes

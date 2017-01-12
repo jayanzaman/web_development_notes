@@ -1,0 +1,117 @@
+@import 'https://fonts.googleapis.com/css?family=Raleway';
+
+$primaryFont: Raleway;
+$primaryColor: blue;
+$secondaryColor: red;
+$offWhite: #faebd7;
+$linkHover: green;
+$bigFont: 70px;
+$bigPadding: 20px;
+
+.normalize {
+    padding: 0;
+    margin: 0;
+}
+
+.text {
+  @extend .normalize;
+  font-family: $primaryFont;
+  color: $primaryColor;
+  font-size: $bigFont;
+  text-align: center;
+  padding: $bigPadding;
+}
+
+.smallText {
+  @extend .text;
+  font-size: $bigFont * .25;
+}
+
+.subHeading {
+  @extend .text;
+  font-size: $bigFont * 0.75;
+}
+
+body {
+  background-color: $offWhite;
+}
+
+nav {
+    @extend .normalize;
+    ul {
+        @extend .normalize;
+        display: table;
+        margin: 0 auto;
+        li {
+            display: inline;
+            padding: $bigPadding / 4;
+            a {
+                font-family: $primaryFont;
+                color: $secondaryColor;
+            }
+            a:hover {
+                color: $linkHover;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+#home {
+  @extend .normalize;
+  h1 {
+      @extend .normalize;
+      @extend .text;
+  }
+
+  h2 {
+      @extend .subHeading;
+  }
+
+  #main_image {
+    @extend .normalize;
+    text-align: center;
+    img {
+      max-width: 400px;
+    }
+  }
+}
+
+#about {
+  @extend .normalize;
+  h2 {
+    @extend .subHeading;
+  }
+  p {
+    @extend .smallText;
+  }
+  ul {
+    @extend .normalize;
+    li {
+      list-style-type: none;
+      @extend .smallText;
+    }
+  }
+}
+
+#portfolio {
+  @extend .normalize;
+  text-align: center;
+  h2 {
+    @extend .subHeading;
+  }
+  img {
+    max-width: 300px;
+  }
+}
+
+#contact {
+  @extend .normalize;
+  text-align: center;
+  h2 {
+    @extend .subHeading;
+  }
+  p {
+    @extend .smallText;
+  }
+}
